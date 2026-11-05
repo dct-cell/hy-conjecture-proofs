@@ -1,0 +1,234 @@
+{
+  "started_utc": "2026-11-05T13:49:41.451460+00:00",
+  "build_location": "Independent source copy; no pre-existing build products for local proof modules",
+  "toolchain": "leanprover/lean4:v4.35.0",
+  "dependency_cache": "Reused pinned dependencies only; each Git revision and tracked tree verified",
+  "dependencies": [
+    {
+      "name": "mathlib",
+      "url": "https://github.com/leanprover-community/mathlib4",
+      "revision": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+      "tracked_files_unmodified": true
+    },
+    {
+      "name": "plausible",
+      "url": "https://github.com/leanprover-community/plausible",
+      "revision": "dfa4f38190d07c37e315953e08b90fe2d95b3c24",
+      "tracked_files_unmodified": true
+    },
+    {
+      "name": "LeanSearchClient",
+      "url": "https://github.com/leanprover-community/LeanSearchClient",
+      "revision": "d6b4c7be5be75ec4917c873ac50c756dc1436372",
+      "tracked_files_unmodified": true
+    },
+    {
+      "name": "importGraph",
+      "url": "https://github.com/leanprover-community/import-graph",
+      "revision": "a41f0e9a4dea23188ea9cc1c41ac9f8bbafe0b93",
+      "tracked_files_unmodified": true
+    },
+    {
+      "name": "proofwidgets",
+      "url": "https://github.com/leanprover-community/ProofWidgets4",
+      "revision": "df72b022e558978a1c50264cfc4d7fec86fa8e04",
+      "tracked_files_unmodified": true
+    },
+    {
+      "name": "aesop",
+      "url": "https://github.com/leanprover-community/aesop",
+      "revision": "4a174c490d8707121c4a9290800489f105d85e07",
+      "tracked_files_unmodified": true
+    },
+    {
+      "name": "Qq",
+      "url": "https://github.com/leanprover-community/quote4",
+      "revision": "dce0ad79c486cb1fb504af04f953c3466b0c6db8",
+      "tracked_files_unmodified": true
+    },
+    {
+      "name": "batteries",
+      "url": "https://github.com/leanprover-community/batteries",
+      "revision": "66e469188fe07963e5cf666c7d4433f45b8131c5",
+      "tracked_files_unmodified": true
+    },
+    {
+      "name": "Cli",
+      "url": "https://github.com/leanprover/lean4-cli",
+      "revision": "c24fe6078c630e89b489bffe59b3e20ac30d12c8",
+      "tracked_files_unmodified": true
+    }
+  ],
+  "commands": [
+    {
+      "command": [
+        "lean",
+        "--version"
+      ],
+      "started_utc": "2026-11-05T13:49:41.591633+00:00",
+      "finished_utc": "2026-11-05T13:49:41.648954+00:00",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "lake",
+        "--version"
+      ],
+      "started_utc": "2026-11-05T13:49:41.649029+00:00",
+      "finished_utc": "2026-11-05T13:49:41.701394+00:00",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "lake",
+        "build"
+      ],
+      "started_utc": "2026-11-05T13:49:41.701464+00:00",
+      "finished_utc": "2026-11-05T13:51:00.354975+00:00",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "Problem32b/Spec.lean"
+      ],
+      "started_utc": "2026-11-05T13:51:00.355083+00:00",
+      "finished_utc": "2026-11-05T13:51:07.803528+00:00",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "Audit.lean"
+      ],
+      "started_utc": "2026-11-05T13:51:07.803610+00:00",
+      "finished_utc": "2026-11-05T13:51:15.169824+00:00",
+      "exit_code": 0
+    }
+  ],
+  "result_edit": {
+    "original_sha256": "3a6a0867af532398e680a7b1bbd7f7e708c52eaf4225894166a731c52c61396c",
+    "current_sha256": "1b0af60bc5d7f420578858a5a25a5ff410e4f308b1c0bb45c7dc44168b5f01f7",
+    "one_sentence_added": "Here $L(U)$, also written $D+U$, denotes the inverse image in $V$ of an $A$-submodule $U\\subseteq V/D$; when computing $(1,u)^v$, formula (6) is applied to $A\\bar u$.",
+    "other_changes": "Only math delimiters converted to dollar syntax",
+    "reverse_normalized_comparison_passed": true
+  },
+  "specification_review": {
+    "corresponds_to": "Full Problem 32(b)",
+    "fraction_field_required": true,
+    "krull_dimension_exactly_one": true,
+    "mori_is_acc_on_nonzero_integral_divisorial_ideals": true,
+    "quantifiers_cover_all_nonzero_ordinary_divisorial_ideals": true,
+    "stability_uses_ordinary_product_in_endomorphism_ring": true,
+    "no_noetherian_or_monomial_restriction_in_claim": true,
+    "independent_specification_not_a_semantic_certificate_by_itself": true
+  },
+  "local_module_build_cache_initially_absent": true,
+  "lean_version": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+  "lake_version": "Lake version 5.0.0-src+eb6cafb (Lean version 4.35.0)",
+  "axiom_closures": {
+    "Problem32b.refutation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Problem32b.concrete_refutation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Problem32b.Laurent.problem32b_counterexample": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Problem32b.FiniteQuotient.every_ideal_is_ann": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Problem32b.Laurent.all_ordinary_divisorial_ideals_two_generated": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Problem32b.Laurent.badIdeal_not_stable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "finished_utc": "2026-11-05T13:51:15.170204+00:00",
+  "main_theorem": "Problem32b.refutation : Not Problem32b.Spec.Conjecture",
+  "scope": "Complete counterexample over F_2; arbitrary-field manuscript checked separately",
+  "status": "PASSED",
+  "files_checked": {
+    "Audit.lean": "98e5d65cf5e9262e1614ce06f44d907fce2acaf7b5fdd57437adf1d6304c3174",
+    "Problem32b/Proof.lean": "e30f7cc2416d53c408a86bd3934db36904e377a817bcc4621b1d8990d0e8acdd",
+    "Problem32b/Proofs/Colons.lean": "4c586a19b247d8df91d0c538435ccfef027b1fa71051b98d94a2281c1e433596",
+    "Problem32b/Proofs/Coordinates.lean": "f519c907b4b42a8396208d6681bf384fef24e13d28c2b5f8ca58f809abe45ae4",
+    "Problem32b/Proofs/FiniteQuotient.lean": "08dbb3243f92a535cf8ec94fb2556253a352adc270252d3fe929b63edaedf857",
+    "Problem32b/Proofs/IdealSets.lean": "b8d8c5129c36e28ba5e8440e85eeab34ff07340d032621677d87b45b74ead0c8",
+    "Problem32b/Proofs/LaurentRing.lean": "4643804ff2dcda9c4c4681f876e163f08db972650ae683618f5c8fb9f3fa12d8",
+    "Problem32b/Proofs/Noetherian.lean": "187651963709fdfe8aeda98eed9d842716e829377def4eee2af71a33dc1b2516",
+    "Problem32b/Proofs/Normalization.lean": "18575a624909987572ba648657aecbdb7ed9f178095474aec08e3f8225ed39fa",
+    "Problem32b/Proofs/PowerSeriesRing.lean": "f7d01672b6e6f5e9e72f174b7a3c1e98cb9d68507a7b454bd5aee331fc8c6635",
+    "Problem32b/Proofs/Result.lean": "130c2c67a92cffa00c7b446ccd86cb637f1f70909eb83748bb1202d9a3fbee7f",
+    "Problem32b/Proofs/TwoGeneration.lean": "f1164f2a835e9b03481f68c07fe71a21a15d603cf61e454f3e8691ad16766248",
+    "Problem32b/Proofs/Witness.lean": "3a8fe54ff5b9da3abec039d47ca538fada206a435e15380cecbbf7d8aee3fff6",
+    "Problem32b/Spec.lean": "2f816a120a281ffa2721b26dd5a0f44abb12df37785f5937fa9ec4b507d0a051",
+    "Problem32b.lean": "3b928c028f17496b58890c5894a7d8d5165114b0fecc1903b7912eab5bd44496",
+    "lake-manifest.json": "8ef23e5a378e6aa916ca8ce43079c865e5beb48aec077753e85a7ac5b0430fb4",
+    "lakefile.toml": "00ad0c00a9e8428bbc5b24173cfd488046c730c14ed8d68b2a83fb8caf596576",
+    "lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "verify.sh": "fc8463d1d588ab80864ca5162f2bdd60b5e9db1200d94669297306c326c205db"
+  },
+  "result_file": "model_outputs/hy_result.md",
+  "result_sha256": "1b0af60bc5d7f420578858a5a25a5ff410e4f308b1c0bb45c7dc44168b5f01f7",
+  "static_checks": {
+    "no_unproved_placeholders_or_extra_axioms_in_scanned_sources": true,
+    "proof_and_specification_bodies_unchanged": true,
+    "scanned_source_files": [
+      "Lean/Problem32b/Proof.lean",
+      "Lean/Problem32b/Proofs/Colons.lean",
+      "Lean/Problem32b/Proofs/Coordinates.lean",
+      "Lean/Problem32b/Proofs/FiniteQuotient.lean",
+      "Lean/Problem32b/Proofs/IdealSets.lean",
+      "Lean/Problem32b/Proofs/LaurentRing.lean",
+      "Lean/Problem32b/Proofs/Noetherian.lean",
+      "Lean/Problem32b/Proofs/Normalization.lean",
+      "Lean/Problem32b/Proofs/PowerSeriesRing.lean",
+      "Lean/Problem32b/Proofs/Result.lean",
+      "Lean/Problem32b/Proofs/TwoGeneration.lean",
+      "Lean/Problem32b/Proofs/Witness.lean",
+      "Lean/Problem32b/Spec.lean"
+    ],
+    "specification_imports_only_mathlib": true
+  },
+  "model_result": {
+    "model_label": "HY",
+    "editing_status": "One clarifying sentence added; math delimiters converted; no other answer text changes",
+    "display_name": "HY result"
+  },
+  "source_question": {
+    "url": "https://www.mat.uniroma3.it/users/fontana/documents/CahenFontanaFrischGlaz_OpenProblemsArticle%20%282%29.pdf",
+    "page": 14,
+    "pdf_sha256": "0413cf8a558a1c1302cff422272777cb96bd5235235ef44628f1dae2ad9fe3db"
+  },
+  "verification_log_sha256": "c31df9093e54445b97d713d0bf013a6d630658f94f9fd38ea3c0e4775e24ca18",
+  "readme_sha256": "77db45db2b79aa4216366bd4a78969f2f9b2791de26e0547eb67c84d2d47510f",
+  "package_checks": {
+    "checked_utc": "2026-11-05T14:06:01.232267+00:00",
+    "relative_document_links_checked": 6,
+    "all_links_exist": true,
+    "one_result_file": true,
+    "all_retained_tex_delimiters_use_dollars": true,
+    "zip_excludes_editor_caches_and_compiled_files": true
+  }
+}
