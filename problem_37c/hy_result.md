@@ -10,21 +10,21 @@ $$
 $$
 Thus $D_P$ is not Jaffard and $D$ is not locally Jaffard.
 
-The construction is a streamlined form of the digit-coded lift in Tran–Vo–Nguyen, *Bouvier’s conjecture is true*, arXiv:2609.01887v1. We do **not** need their stronger conclusions that the rings are UFDs or that the global ring is Jaffard. In particular, this proof does not rely on their polynomial upper bound for Krull domains.
+The construction is a streamlined form of the digit-coded lift in Tran–Vo–Nguyen, *Bouvier’s conjecture is true* [1, §§3–5]. We do **not** need their stronger conclusions that the rings are UFDs or that the global ring is Jaffard. In particular, this proof does not rely on their polynomial upper bound for Krull domains.
 
 ## 1. Valuation facts used
 
 We use the following standard results in these exact forms.
 
-1. **Domination theorem.** If $(S,\mathfrak m)$ is a local domain with fraction field $F$, there is a valuation ring $V\subseteq F$ containing $S$ such that $\mathfrak m_V\cap S=\mathfrak m$.
+1. **Domination theorem.** If $(S,\mathfrak m)$ is a local domain with fraction field $F$, there is a valuation ring $V\subseteq F$ containing $S$ such that $\mathfrak m_V\cap S=\mathfrak m$ [2, Lemma 10.50.2].
 
-2. **Zariski–Abhyankar inequality.** If $L/k$ is a finitely generated field extension and $w$ is a valuation on $L$, trivial on $k$, with value group $\Gamma_w$ and residue field $\kappa(w)$, then
+2. **Zariski–Abhyankar inequality** [3, Lemma 6.31]. If $L/k$ is a finitely generated field extension and $w$ is a valuation on $L$, trivial on $k$, with value group $\Gamma_w$ and residue field $\kappa(w)$, then
    $$
    \operatorname{ratrank}\Gamma_w+\operatorname{trdeg}_k\kappa(w)
    \le \operatorname{trdeg}_k L.
    $$
 
-3. **Finite-extension inequality.** If $L/K$ is a finite field extension and $w$ on $L$ restricts to $v$ on $K$, then
+3. **Finite-extension inequality** [4, Theorem 7.49]. If $L/K$ is a finite field extension and $w$ on $L$ restricts to $v$ on $K$, then
    $$
    [\Gamma_w:\Gamma_v]<\infty,\qquad
    [\kappa(w):\kappa(v)]<\infty,
@@ -34,7 +34,7 @@ We use the following standard results in these exact forms.
    [\Gamma_w:\Gamma_v]\,[\kappa(w):\kappa(v)]\le [L:K].
    $$
 
-4. The prime ideals of a valuation domain correspond to the convex subgroups of its value group. Consequently the rank of a valuation domain is the rank of its value group, which is at most its rational rank.
+4. The prime ideals of a valuation domain correspond to the convex subgroups of its value group. Consequently the rank of a valuation domain is the rank of its value group, which is at most its rational rank [5, Propositions 6.6.4 and 6.6.6].
 
 We shall also use, without further comment, the usual prime correspondence under localization.
 
@@ -561,7 +561,7 @@ Let $Q\subset\mathcal B$ be persistent, let $q=Q\cap R$, and set
 $$
 L=\operatorname{Frac}(\mathcal B/Q).
 $$
-There is one valuation ring of $L$ dominating $\mathcal A/q$. More explicitly, the local rings
+There exists a valuation ring of $L$ dominating $\mathcal A/q$. More explicitly, the local rings
 $$
 T_n=(S_n/I_n)_{\mathfrak m_n/I_n}
 $$
@@ -889,3 +889,11 @@ These satisfy all required conditions:
   $$
 
 Consequently $D_P$ fails the defining one-variable equality for a Jaffard domain, while all embeddings and stated finiteness assumptions in the assertion are retained. This disproves the assertion. $\blacksquare$
+
+## References
+
+1. Viet-Hoang Tran, Thieu N. Vo and Tan M. Nguyen, *Bouvier’s conjecture is true*, arXiv:2609.01887v1, 2026, §§3–5 (the boundary domain, the lift and the height argument). [Version 1](https://arxiv.org/html/2609.01887v1).
+2. The Stacks Project Authors, *The Stacks Project*, Lemma 10.50.2, domination by a valuation ring. [Tag 00I8](https://stacks.math.columbia.edu/tag/00I8).
+3. Franz-Viktor Kuhlmann, *Valuation Theory*, online book manuscript, Chapter 6, §6.4, Lemma 6.31, p. 152. This is the valued-field form of the transcendence-degree inequality, without a characteristic or valuation-rank restriction. [Chapter 6](https://www.fvkuhlmann.de/bookch6.pdf).
+4. Franz-Viktor Kuhlmann, *Valuation Theory*, online book manuscript, Chapter 7, Theorem 7.49, the fundamental inequality for finite extensions. [Chapter 7](https://www.fvkuhlmann.de/bookch7.pdf).
+5. Irena Swanson and Craig Huneke, *Integral Closure of Ideals, Rings, and Modules*, London Mathematical Society Lecture Note Series 336, Cambridge University Press, 2006, Propositions 6.6.4 and 6.6.6, pp. 131–132 (convex subgroups, coarsenings and rank). [Author-hosted PDF](https://www.math.purdue.edu/~iswanso/book/SwansonHuneke.pdf).

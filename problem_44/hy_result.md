@@ -2,21 +2,21 @@
 
 We specify a complex-analytic surface germ by plumbing two explicitly given line bundles on an explicitly given elliptic curve, contract the two compact curves by Grauert’s theorem, and then complete the resulting analytic local ring.
 
-Two preliminary points deserve emphasis. First, all choices which are merely asserted to exist in Cutkosky’s construction are made explicit here: the elliptic curve, its point, and the two normal bundles. Secondly, the argument below is organized so that it proves the required assertion for *every* ideal in the sense of the problem. We prove the assertion first for the analytic local ring $A$, where all blowups are analytic, and then use Sally’s completion theorem to pass to $\widehat A$. We also use a high Veronese subalgebra of the normalized Rees algebra: this bridges the difference between “one Rees valuation ring” (normalized blowup has one component) and “the ordinary blowup is already normal and has one component.” This distinction is important and is not merely terminological.
+Two preliminary points deserve emphasis. First, all choices which are merely asserted to exist in Cutkosky’s construction [1, pp. 72–73] are made explicit here: the elliptic curve, its point, and the two normal bundles. Secondly, the argument below is organized so that it proves the required assertion for *every* ideal in the sense of the problem. We prove the assertion first for the analytic local ring $A$, where all blowups are analytic, and then use Sally’s completion theorem to pass to $\widehat A$. We also use a high Veronese subalgebra of the normalized Rees algebra: this bridges the difference between “one Rees valuation ring” (normalized blowup has one component) and “the ordinary blowup is already normal and has one component.” This distinction is important and is not merely terminological.
 
 ## 1. Standard results used
 
 We use the following results in these precise forms.
 
-**(G) Grauert contraction.** Let $C=C_1\cup\cdots\cup C_r$ be a connected compact reduced curve, with smooth components and transverse intersections, on a smooth complex surface $V$. If the intersection matrix $(C_i\cdot C_j)$ is negative definite, then, after replacing $V$ by a sufficiently small analytic neighborhood of $C$, there is a proper bimeromorphic holomorphic map
+**(G) Grauert contraction** (in the formulation recalled in [2, §2, p. 4]). Let $C=C_1\cup\cdots\cup C_r$ be a connected compact reduced curve, with smooth components and transverse intersections, on a smooth complex surface $V$. If the intersection matrix $(C_i\cdot C_j)$ is negative definite, then, after replacing $V$ by a sufficiently small analytic neighborhood of $C$, there is a proper bimeromorphic holomorphic map
 $$
 g:V\to W
 $$
 to a normal complex-analytic surface $W$, an isomorphism away from $C$, which contracts $C$ to one point $q$. The analytic germ $(W,q)$ is determined by the germ of $V$ along $C$.
 
-**(E) Analytic excellence and completion.** Complex-analytic local rings are excellent. If $A$ is an excellent normal local ring, then $\widehat A$ is normal; as $\widehat A$ is local, it is a domain. Moreover $\dim\widehat A=\dim A$.
+**(E) Analytic excellence and completion.** Complex-analytic local rings are excellent [3, p. 5]. If $A$ is an excellent normal local ring, then $\widehat A$ is normal; as $\widehat A$ is local, it is a domain. Moreover $\dim\widehat A=\dim A$ [8].
 
-**(R) Rees’s geometric description.** For a two-dimensional excellent normal local domain $(B,\mathfrak n)$ and an $\mathfrak n$-primary ideal $I$, put
+**(R) Rees’s geometric description** [4, §5.2 and Chapter 10; 6, §2]. For a two-dimensional excellent normal local domain $(B,\mathfrak n)$ and an $\mathfrak n$-primary ideal $I$, put
 $$
 S=\overline{B[It]}=\bigoplus_{n\ge0}\overline{I^n}.
 $$
@@ -26,17 +26,17 @@ $$
 $$
 In particular, $I$ has exactly one Rees valuation ring iff that reduced exceptional fibre is irreducible.
 
-**(V) Standard Veronese generation.** If $S$ is a Noetherian positively graded ring with $S_0$ Noetherian, then some Veronese
+**(V) Standard Veronese generation** [5]. If $S$ is a Noetherian positively graded ring with $S_0$ Noetherian, then some Veronese
 $$
 S^{(b)}=\bigoplus_{n\ge0}S_{bn}
 $$
 is generated over $S_0$ by $S_b$. Also $\operatorname{Proj}S^{(b)}\cong\operatorname{Proj}S$; if $S$ is normal, so is $S^{(b)}$.
 
-**(S) Sally’s completion theorem.** Let $(B,\mathfrak n)$ be an analytically irreducible Noetherian local domain. Then $B$ has an $\mathfrak n$-primary ideal with exactly one Rees valuation ring if and only if the integral closure of $\widehat B$ has a zero-dimensional ideal with exactly one Rees valuation ring. This is Sally’s theorem, in the formulation given in Swanson’s survey *Rees Valuations*, Section 3 (Sally, *One-fibered ideals*, MSRI Publications 15, Springer, 1989, p. 440).
+**(S) Sally’s completion theorem.** Let $(B,\mathfrak n)$ be an analytically irreducible Noetherian local domain. Then $B$ has an $\mathfrak n$-primary ideal with exactly one Rees valuation ring if and only if the integral closure of $\widehat B$ has a zero-dimensional ideal with exactly one Rees valuation ring. This is Sally’s theorem, in the formulation given in Swanson’s survey *Rees Valuations*, Section 3, p. 12 [6] (Sally, *One-fibered ideals*, MSRI Publications 15, Springer, 1989, p. 440).
 
 In our situation $\widehat A$ will already be a normal local domain, so the integral closure of $\widehat A$ is $\widehat A$ itself, and “zero-dimensional” means primary to its maximal ideal. Thus (S) gives an exact equivalence between the desired property for $A$ and for $\widehat A$.
 
-Finally, we use the standard analytic forms of Zariski’s Main Theorem and surface resolution: between two proper bimeromorphic normal analytic surface germs there is a normalized graph; no curve is contracted by both graph projections; a proper bimeromorphic morphism of normal surfaces with no exceptional curve is an isomorphism; and a morphism to a smooth surface which is an isomorphism away from one closed point is dominated by point blowups over that point, which can be resolved by further point blowups there.
+Finally, we use the standard analytic forms of Zariski’s Main Theorem and surface resolution: between two proper bimeromorphic normal analytic surface germs there is a normalized graph; no curve is contracted by both graph projections; a proper bimeromorphic morphism of normal surfaces with no exceptional curve is an isomorphism; and a morphism to a smooth surface which is an isomorphism away from one closed point is dominated by point blowups over that point, which can be resolved by further point blowups there. These are also the surface-theoretic tools used in [1, pp. 72–73].
 
 All rings below are excellent and Noetherian, and all analytic blowups are taken over sufficiently small representatives of the relevant germs.
 
@@ -68,7 +68,7 @@ x^2\left(x-\frac14\right)=0,
 $$
 so the third intersection point is $(1/4,7/8)$, and reflection in the $x$-axis gives the displayed formula for $2Q$.
 
-By the Nagell–Lutz theorem for the integral Weierstrass equation $y^2=x^3-x+1$, every rational torsion point has integral coordinates. Since $2Q$ has nonintegral coordinates, $Q$ is non-torsion. Under the standard identification
+By the Nagell–Lutz theorem [7, §6.6] for the integral Weierstrass equation $y^2=x^3-x+1$, every rational torsion point has integral coordinates. Since $2Q$ has nonintegral coordinates, $Q$ is non-torsion. Under the standard identification [7, §8.2]
 $$
 E(\mathbb C)\simeq\operatorname{Pic}^0(E),\qquad
 P\longmapsto\mathcal O_E(P-O),
@@ -121,7 +121,7 @@ $$
 $$
 We use $z=u$ as a local coordinate at $O$. On $E\setminus\{Q\}$, the rational section $1$ trivializes both $\mathcal O_E(D_1)$ and $\mathcal O_E(D_2)$. Choose the same sufficiently small disc $|z|<\varepsilon$ about $O$, small enough that its lift lies in the branch $w=\phi(z)$ and hence avoids the two other points $w=\pm1$ over $z=0$. Let $x_i$ be the fibre coordinate of $T_i$ in this trivialization. Thus $C_i$ is $x_i=0$ near $p_i$.
 
-Glue the two polydiscs by
+Apply holomorphic plumbing to sufficiently small tubular neighborhoods of the zero sections [2, §4, pp. 10–11]. This constructs a smooth Hausdorff analytic surface germ along their union; the identifications are made on these neighborhoods, not on the two entire line bundles. In the chosen coordinates the gluing is
 $$
 (z_1,x_1)\longmapsto(z_2,x_2)=(x_1,z_1),
 $$
@@ -221,7 +221,12 @@ Choose a small analytic representative of $(W,q)$ on which the finitely many gen
 $$
 Z=\operatorname{Bl}_J(W)
 $$
-be the corresponding analytic blowup, shrunk around its exceptional fibre. On each standard chart the analytic local ring has the same completion as the corresponding local ring of the algebraic chart of $Z_0$. Those algebraic local rings are normal because $A$ is excellent and $A[Jt]$ is normal. Their completions are therefore normal, and normality descends from a faithfully flat completion to a local domain. Hence $Z$ is normal. Its reduced exceptional fibre is the same curve $E$.
+be the corresponding analytic blowup, shrunk around its exceptional fibre. To compare its local rings with those of $Z_0$, write $A=\mathbb C\{z_1,\ldots,z_N\}/\mathfrak a$. On a standard blowup chart, choose a finite presentation with extra coordinates $y_1,\ldots,y_r$ and relations $F_1,\ldots,F_s$. At a closed point of the exceptional fibre, write its coordinates as $y=\lambda$. The algebraic and analytic local rings then have the same completion
+$$
+\mathbb C[[z_1,\ldots,z_N,y_1-\lambda_1,\ldots,y_r-\lambda_r]]
+/(\mathfrak a,F_1,\ldots,F_s).
+$$
+The finite set of relations is defined on a sufficiently small analytic representative. The algebraic local rings are normal and excellent because $A$ is excellent and $A[Jt]$ is normal, so these completions are normal. Normality descends along the faithfully flat completion map [8], hence the analytic local rings along the exceptional fibre are normal. Shrinking around that fibre gives a normal $Z$. Reduction of the same chart presentations modulo $\mathfrak m_A$ identifies the reduced exceptional fibre with the analytification of the same projective curve $E$.
 
 Let
 $$
@@ -452,3 +457,14 @@ $$
 E:\ y^2=x^3-x+1,\qquad O=(0:1:0),\qquad Q=(0:1:1).
 $$
 This $R$ is a two-dimensional complete normal Noetherian local domain, and every $\mathfrak m$-primary ideal in $R$ has at least two Rees valuation rings.
+
+## References
+
+1. Steven Dale Cutkosky, *On unique and almost unique factorization of complete ideals II*, Inventiones Mathematicae **98** (1989), 59–74, especially pp. 72–73 for the geometric construction and the valuation-center argument. [Article record and archive access](https://geodesic.mathdoc.fr/item/IM_1989__98_1_143720/).
+2. Patrick Popescu-Pampu, *Numerically Gorenstein surface singularities are homeomorphic to Gorenstein ones*, Duke Mathematical Journal **159**(3) (2011), 539–559. In the linked arXiv version, §2, p. 4 recalls Grauert’s contraction criterion, and §4, pp. 10–11 describes holomorphic plumbing of line-bundle neighborhoods. Only these facts are used here, not the additional conclusions about Gorenstein singularities. [arXiv:0911.5090v3](https://arxiv.org/pdf/0911.5090v3).
+3. Melvin Hochster, *Tight closure and strongly F-regular rings*, Research in the Mathematical Sciences **9** (2022), article 56, p. 5, for excellence of convergent power-series rings, finite normalization and completion. [Author-hosted PDF](https://sites.lsa.umich.edu/hochster/wp-content/uploads/sites/1337/2024/10/TightClosureStrongFeg.pdf).
+4. Irena Swanson and Craig Huneke, *Integral Closure of Ideals, Rings, and Modules*, London Mathematical Society Lecture Note Series 336, Cambridge University Press, 2006, §5.2, pp. 101–103 (normalization of Rees algebras), and Chapter 10 (Rees valuations). [Author-hosted PDF](https://www.math.purdue.edu/~iswanso/book/SwansonHuneke.pdf).
+5. The Stacks Project Authors, *The Stacks Project*, Lemma 10.56.2, generation in degree one after taking a sufficiently divisible Veronese subalgebra. [Tag 0EGH](https://stacks.math.columbia.edu/tag/0EGH).
+6. Irena Swanson, *Rees Valuations*, author-hosted survey, §2, pp. 6–8 (existence and the blowup construction), and §3, p. 12 (Sally’s completion theorem). The latter cites Judith D. Sally, *One-fibered ideals*, in *Commutative Algebra*, Mathematical Sciences Research Institute Publications **15**, Springer, 1989, 437–442, p. 440. Page numbers here refer to the linked survey. [Survey PDF](https://www.math.purdue.edu/~iswanso/reesvals.pdf).
+7. Bjorn Poonen, *Elliptic Curves*, author-hosted notes, §6.6, p. 11 (Nagell–Lutz), and §8.2, pp. 15–16 (the group law and the degree-zero Picard group). [PDF](https://math.mit.edu/~poonen/papers/elliptic.pdf).
+8. The Stacks Project Authors, *The Stacks Project*, Lemma 15.43.2, normality under regular ring maps; Lemma 10.164.3, descent of normality under faithfully flat maps; and §15.44, especially Lemma 15.44.1, for faithful flatness and preservation of dimension under completion. [Tag 0BFK](https://stacks.math.columbia.edu/tag/0BFK), [Tag 033G](https://stacks.math.columbia.edu/tag/033G), [Tag 07NU](https://stacks.math.columbia.edu/tag/07NU).

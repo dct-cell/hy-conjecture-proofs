@@ -1,6 +1,6 @@
 {
-  "utc_started": "2026-11-09T04:19:54.971765+00:00",
-  "build_directory": "/Users/strange/Desktop/hy\u7ed3\u679c/\u6838\u9a8c\u5de5\u4f5c\u533a_20261109/build_41_release",
+  "utc_started": "2026-11-09T06:14:26.426304+00:00",
+  "build_directory": "/Users/strange/Desktop/hy结果/核验工作区_20261109/bibliography_refresh/build_41",
   "initial_local_build_cache": false,
   "source_sha256": {
     "Problem41.lean": "94d6ac00d4e747997221a86d4c49c547a5315fa36877599594a93a26ad7f1316",
@@ -38,7 +38,7 @@
         "--version"
       ],
       "exit_code": 0,
-      "elapsed_seconds": 0.047
+      "elapsed_seconds": 0.25
     },
     {
       "argv": [
@@ -46,7 +46,7 @@
         "--version"
       ],
       "exit_code": 0,
-      "elapsed_seconds": 0.05
+      "elapsed_seconds": 0.068
     },
     {
       "argv": [
@@ -54,7 +54,7 @@
         "build"
       ],
       "exit_code": 0,
-      "elapsed_seconds": 134.231
+      "elapsed_seconds": 205.125
     },
     {
       "argv": [
@@ -65,7 +65,7 @@
         "Problem41/Spec.lean"
       ],
       "exit_code": 0,
-      "elapsed_seconds": 12.007
+      "elapsed_seconds": 17.385
     },
     {
       "argv": [
@@ -76,7 +76,7 @@
         "Problem41/Proof.lean"
       ],
       "exit_code": 0,
-      "elapsed_seconds": 11.754
+      "elapsed_seconds": 17.485
     },
     {
       "argv": [
@@ -87,50 +87,53 @@
         "Audit.lean"
       ],
       "exit_code": 0,
-      "elapsed_seconds": 11.283
+      "elapsed_seconds": 18.578
     }
   ],
   "status": "passed",
   "scope": "full original Problem 41, all fields and all positive triples",
-  "source_commit": "8df3618d142283db73d0a2f4bbe4b124636e06f0",
-  "utc_finished": "2026-11-09T04:22:44.347968+00:00",
+  "source_commit": "72944e9bddb22c2aa8f26ebd77187240e4e48834",
+  "utc_finished": "2026-11-09T06:18:45.385205+00:00",
   "axiom_closures": {
     "Problem41.solution": [
-      "propext",
       "Classical.choice",
-      "Quot.sound"
+      "Quot.sound",
+      "propext"
     ],
     "Problem41.complete_classification": [
-      "propext",
       "Classical.choice",
-      "Quot.sound"
+      "Quot.sound",
+      "propext"
     ],
     "Problem41.integral_closure_pureIdeal": [
-      "propext",
       "Classical.choice",
-      "Quot.sound"
+      "Quot.sound",
+      "propext"
     ],
     "Problem41.integral_closure_weightedIdeal_pow": [
-      "propext",
       "Classical.choice",
-      "Quot.sound"
+      "Quot.sound",
+      "propext"
     ],
     "Problem41.monomial_mem_weightedIdeal_pow": [
-      "propext",
       "Classical.choice",
-      "Quot.sound"
+      "Quot.sound",
+      "propext"
     ],
     "Problem41.box_iff_all_decompositions": [
-      "propext",
       "Classical.choice",
-      "Quot.sound"
+      "Quot.sound",
+      "propext"
     ],
     "Problem41.decideBox_correct": [
-      "propext",
       "Classical.choice",
-      "Quot.sound"
+      "Quot.sound",
+      "propext"
     ]
   },
   "full_problem_proved": true,
-  "specification_review": "passed; frozen Spec.lean unchanged; original ideal definition and all positive powers covered"
+  "specification_review": "passed; frozen Spec.lean unchanged; original ideal definition and all positive powers covered",
+  "post_build_source_hashes_match": true,
+  "review_context": "Citation and exposition update only. All Lean sources, specifications, dependency locks and build configuration are unchanged; fresh independent local-proof builds and trust=0 entry-point checks were run.",
+  "verification_log_sha256": "823244f9cfa08bba0928a0996071d6ec30195d340b1ec2e229e0bb3a3161e6b3"
 }

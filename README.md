@@ -14,3 +14,5 @@ HY results for six problems in *Open Problems in Commutative Ring Theory*, with 
 Each directory contains the evaluation problem, the HY result, and its scope and references. These include counterexamples, an algorithmic classification, a relaxation of a theorem, and a geometric construction. No blanket claim of new resolutions of six open problems is made.
 
 Lean projects separate the mathematical specification from the proof. Kernel checking establishes the formal theorem; correspondence of the specification with the written problem is reviewed separately. Complete formalization requires the full target and all necessary dependencies, without unproved axioms.
+
+[Citation review and fresh Lean checks (2026-11-09)](reports/2026-11-09-citation-review.md).

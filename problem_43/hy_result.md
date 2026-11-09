@@ -2,6 +2,8 @@
 
 ## The relaxation
 
+The theorem being relaxed is Hochster’s Theorem 3.1, p. 302 of the published paper [1]; relative $S_i$ presentations are defined in its Definition 2.3, p. 297.
+
 I weaken hypothesis (5) as follows.
 
 > **(5′)** For every height-one prime ideal $Q$ of $\overline S$, the local ring
@@ -11,9 +13,9 @@ Hypotheses (1)–(4) are kept unchanged. The original hypothesis (5) says that t
 
 We shall use the following standard theorems:
 
-* Serre’s criterion: a Noetherian domain is normal iff it satisfies $R_1$ and $S_2$.
-* A hypersurface over a field is Cohen–Macaulay; polynomial extensions and localizations of Cohen–Macaulay rings are Cohen–Macaulay.
-* Fields are excellent, excellence is stable under finitely generated algebras and localizations, and if $A$ is excellent then for every $r$ the $S_r$-locus of every algebra essentially of finite type over $A$ is open. This is Grothendieck’s openness theorem for the $S_r$ condition.
+* Serre’s criterion: a Noetherian domain is normal iff it satisfies $R_1$ and $S_2$ [2, Lemma 10.157.4].
+* A hypersurface over a field is Cohen–Macaulay; polynomial extensions and localizations of Cohen–Macaulay rings are Cohen–Macaulay [3, Lemmas 10.104.2, 10.104.5 and 10.104.7].
+* Fields are excellent, excellence is stable under finitely generated algebras and localizations [4], and if $A$ is excellent then for every $r$ the $S_r$-locus of every algebra essentially of finite type over $A$ is open [5, §§2.8 and 2.10]. This is Grothendieck’s openness theorem for the $S_r$ condition.
 
 ## The example
 
@@ -311,3 +313,11 @@ $$
 $$
 
 and the displayed inclusion fails. This gives the required counterexample to the weakened theorem.
+
+## References
+
+1. Melvin Hochster, *Presentation depth and the Lipman–Sathaye Jacobian theorem*, Homology, Homotopy and Applications **4**(2) (2002), 295–314. Definition 2.3, p. 297, defines relative $S_i$ presentations; Theorem 3.1 and its footnotes, p. 302, state the theorem used here. Some internal cross-references retain the earlier numbering “Theorem 2.1.” [Published PDF](https://archive.intlpress.com/site/pub/files/_fulltext/journals/hha/2002/0004/0002/HHA-2002-0004-0002-a014.pdf).
+2. The Stacks Project Authors, *The Stacks Project*, §10.157, Lemma 10.157.4, Serre’s criterion for normality. [Section 10.157](https://stacks.math.columbia.edu/tag/031O).
+3. The Stacks Project Authors, *The Stacks Project*, §10.104, Lemmas 10.104.2, 10.104.5 and 10.104.7, Cohen–Macaulay quotients by regular sequences, localizations and polynomial rings. [Section 10.104](https://stacks.math.columbia.edu/tag/00N7).
+4. The Stacks Project Authors, *The Stacks Project*, §15.53, Lemma 15.53.2 and Proposition 15.53.3, excellence of fields and stability under essentially finite type extensions. [Tag 07QS](https://stacks.math.columbia.edu/tag/07QS).
+5. Kęstutis Česnavičius, *Macaulayfication of Noetherian schemes*, arXiv:1810.04493v2, 2020, §§2.8 and 2.10, pp. 6–7, on openness of Serre loci; see also Example 1.3 for excellence. [Version 2 PDF](https://arxiv.org/pdf/1810.04493v2).

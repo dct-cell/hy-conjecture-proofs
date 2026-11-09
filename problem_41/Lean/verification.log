@@ -1,40 +1,39 @@
-
 $ lean --version
 Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)
 
-EXIT_CODE=0
+EXIT 0
 
 $ lake --version
 Lake version 5.0.0-src+eb6cafb (Lean version 4.35.0)
 
-EXIT_CODE=0
+EXIT 0
 
 $ lake build
-⚠ [9047/9058] Built Problem41.Spec (37s)
+⚠ [9047/9058] Built Problem41.Spec (42s)
 warning: Problem41/Spec.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
-✔ [9048/9058] Built Problem41.Proofs.FiniteCriterion (19s)
-⚠ [9049/9058] Built Problem41.Proofs.ReesCriterion (19s)
+⚠ [9048/9058] Built Problem41.Proofs.ReesCriterion (24s)
 warning: Problem41/Proofs/ReesCriterion.lean: imports `Mathlib.RingTheory.ReesAlgebra` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: Problem41/Proofs/ReesCriterion.lean: imports `Mathlib.RingTheory.IntegralClosure.Algebra.Ideal` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
-✔ [9050/9058] Built Problem41.Proofs.IntegralDegreeBound (20s)
-✔ [9051/9058] Built Problem41.Proofs.MonomialIdeals (9.3s)
-✔ [9052/9058] Built Problem41.Proofs.Homogenization (10s)
-✔ [9053/9058] Built Problem41.Proofs.IdealPowers (10s)
-✔ [9054/9058] Built Problem41.Proofs.IntegralClosure (9.1s)
-✔ [9055/9058] Built Problem41.Proofs.IntegralClosurePowers (15s)
-✔ [9056/9058] Built Problem41.Proof (9.3s)
-✔ [9057/9058] Built Problem41 (16s)
+✔ [9049/9058] Built Problem41.Proofs.FiniteCriterion (24s)
+✔ [9050/9058] Built Problem41.Proofs.IntegralDegreeBound (24s)
+✔ [9051/9058] Built Problem41.Proofs.MonomialIdeals (23s)
+✔ [9052/9058] Built Problem41.Proofs.Homogenization (24s)
+✔ [9053/9058] Built Problem41.Proofs.IdealPowers (25s)
+✔ [9054/9058] Built Problem41.Proofs.IntegralClosure (15s)
+✔ [9055/9058] Built Problem41.Proofs.IntegralClosurePowers (16s)
+✔ [9056/9058] Built Problem41.Proof (13s)
+✔ [9057/9058] Built Problem41 (15s)
 Build completed successfully (9058 jobs).
 
-EXIT_CODE=0
+EXIT 0
 
 $ lake env lean --trust=0 Problem41/Spec.lean
 
-EXIT_CODE=0
+EXIT 0
 
 $ lake env lean --trust=0 Problem41/Proof.lean
 
-EXIT_CODE=0
+EXIT 0
 
 $ lake env lean --trust=0 Audit.lean
 def Problem41.IntegralOverIdeal.{u_1} : {R : Type u_1} → [inst : CommRing.{u_1} R] → Ideal.{u_1} R → R → Prop :=
@@ -142,4 +141,5 @@ theorem Problem41.decideBox_correct : ∀ (a b c : ℕ),
 ⋯
 'Problem41.decideBox_correct' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
 
-EXIT_CODE=0
+EXIT 0
+

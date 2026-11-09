@@ -1,18 +1,17 @@
-
 $ lean --version
 Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)
 
-EXIT_CODE=0
+EXIT 0
 
 $ lake --version
 Lake version 5.0.0-src+eb6cafb (Lean version 4.35.0)
 
-EXIT_CODE=0
+EXIT 0
 
 $ lake build
-⚠ [9047/9061] Built Problem32b.Spec (12s)
+⚠ [9047/9061] Built Problem32b.Spec (51s)
 warning: Problem32b/Spec.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
-⚠ [9048/9061] Built Problem32b.Proofs.PowerSeriesRing (12s)
+⚠ [9048/9061] Built Problem32b.Proofs.PowerSeriesRing (51s)
 warning: Problem32b/Proofs/PowerSeriesRing.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: Problem32b/Proofs/PowerSeriesRing.lean:100:30: This simp argument is unused:
   coeff_C
@@ -28,35 +27,35 @@ Hint: Omit it from the simp argument list.
   [apply] simp [coeff_X_pow_mul', coeff_C, coeff_C_mul, h1, h2, h3, h6, h7]
 
 Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
-⚠ [9049/9061] Built Problem32b.Proofs.FiniteQuotient (14s)
+⚠ [9049/9061] Built Problem32b.Proofs.FiniteQuotient (52s)
 warning: Problem32b/Proofs/FiniteQuotient.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 info: Problem32b/Proofs/FiniteQuotient.lean:50:0: 'Problem32b.FiniteQuotient.every_ideal_is_ann' depends on axioms: [propext, Classical.choice, Quot.sound]
-✔ [9050/9061] Built Problem32b.Proofs.IdealSets (10s)
-⚠ [9051/9061] Built Problem32b.Proofs.LaurentRing (11s)
+✔ [9050/9061] Built Problem32b.Proofs.IdealSets (32s)
+⚠ [9051/9061] Built Problem32b.Proofs.LaurentRing (32s)
 warning: Problem32b/Proofs/LaurentRing.lean: imports `Mathlib.RingTheory.LaurentSeries` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: Problem32b/Proofs/LaurentRing.lean: imports `Mathlib.RingTheory.Localization.FractionRing` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
-⚠ [9052/9061] Built Problem32b.Proofs.Noetherian (11s)
+⚠ [9052/9061] Built Problem32b.Proofs.Noetherian (32s)
 warning: Problem32b/Proofs/Noetherian.lean: imports `Mathlib.RingTheory.Noetherian.OfPrime` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
 warning: Problem32b/Proofs/Noetherian.lean: imports `Mathlib.RingTheory.KrullDimension.LocalRing` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
-✔ [9053/9061] Built Problem32b.Proofs.Colons (11s)
-✔ [9054/9061] Built Problem32b.Proofs.Coordinates (11s)
-✔ [9055/9061] Built Problem32b.Proofs.Normalization (12s)
-✔ [9056/9061] Built Problem32b.Proofs.Witness (12s)
-✔ [9057/9061] Built Problem32b.Proofs.TwoGeneration (12s)
-✔ [9058/9061] Built Problem32b.Proofs.Result (10s)
-✔ [9059/9061] Built Problem32b.Proof (10s)
-✔ [9060/9061] Built Problem32b (10s)
+✔ [9053/9061] Built Problem32b.Proofs.Colons (18s)
+✔ [9054/9061] Built Problem32b.Proofs.Coordinates (19s)
+✔ [9055/9061] Built Problem32b.Proofs.Normalization (19s)
+✔ [9056/9061] Built Problem32b.Proofs.TwoGeneration (22s)
+✔ [9057/9061] Built Problem32b.Proofs.Witness (23s)
+✔ [9058/9061] Built Problem32b.Proofs.Result (14s)
+✔ [9059/9061] Built Problem32b.Proof (18s)
+✔ [9060/9061] Built Problem32b (15s)
 Build completed successfully (9061 jobs).
 
-EXIT_CODE=0
+EXIT 0
 
 $ lake env lean --trust=0 Problem32b/Spec.lean
 
-EXIT_CODE=0
+EXIT 0
 
 $ lake env lean --trust=0 Problem32b/Proof.lean
 
-EXIT_CODE=0
+EXIT 0
 
 $ lake env lean --trust=0 Audit.lean
 theorem Problem32b.refutation : ¬Problem32b.Spec.Conjecture :=
@@ -176,4 +175,5 @@ fun {K} [Field.{u_1} K] D =>
  Quot.sound.{u}]
 'Problem32b.Laurent.badIdeal_not_stable' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
 
-EXIT_CODE=0
+EXIT 0
+

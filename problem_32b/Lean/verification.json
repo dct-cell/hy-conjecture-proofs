@@ -1,6 +1,6 @@
 {
-  "utc_started": "2026-11-09T04:06:42.453429+00:00",
-  "build_directory": "/Users/strange/Desktop/hy结果/核验工作区_20261109/build_32b_exact_spec",
+  "utc_started": "2026-11-09T06:14:26.436347+00:00",
+  "build_directory": "/Users/strange/Desktop/hy结果/核验工作区_20261109/bibliography_refresh/build_32b",
   "initial_local_build_cache": false,
   "source_sha256": {
     "Audit.lean": "98e5d65cf5e9262e1614ce06f44d907fce2acaf7b5fdd57437adf1d6304c3174",
@@ -41,7 +41,7 @@
         "--version"
       ],
       "exit_code": 0,
-      "elapsed_seconds": 0.046
+      "elapsed_seconds": 0.243
     },
     {
       "argv": [
@@ -49,7 +49,7 @@
         "--version"
       ],
       "exit_code": 0,
-      "elapsed_seconds": 0.049
+      "elapsed_seconds": 0.068
     },
     {
       "argv": [
@@ -57,7 +57,7 @@
         "build"
       ],
       "exit_code": 0,
-      "elapsed_seconds": 93.021
+      "elapsed_seconds": 203.904
     },
     {
       "argv": [
@@ -68,7 +68,7 @@
         "Problem32b/Spec.lean"
       ],
       "exit_code": 0,
-      "elapsed_seconds": 11.084
+      "elapsed_seconds": 17.672
     },
     {
       "argv": [
@@ -79,7 +79,7 @@
         "Problem32b/Proof.lean"
       ],
       "exit_code": 0,
-      "elapsed_seconds": 11.06
+      "elapsed_seconds": 17.606
     },
     {
       "argv": [
@@ -90,12 +90,12 @@
         "Audit.lean"
       ],
       "exit_code": 0,
-      "elapsed_seconds": 10.076
+      "elapsed_seconds": 19.668
     }
   ],
   "status": "passed",
-  "utc_finished": "2026-11-09T04:08:47.792388+00:00",
-  "verified_source_commit": "afdf15e2d3c032a2c795a112d76e78923274776d",
+  "utc_finished": "2026-11-09T06:18:45.663630+00:00",
+  "verified_source_commit": "72944e9bddb22c2aa8f26ebd77187240e4e48834",
   "final_theorem": "Problem32b.refutation : ¬ Problem32b.Spec.Conjecture",
   "axiom_closure": {
     "Problem32b.FiniteQuotient.every_ideal_is_ann": [
@@ -142,5 +142,8 @@
   "prior_round": {
     "status": "passed",
     "description": "two earlier clean builds of the historical specification; logs retained locally, not used to replace checking the explicit nonzero-generator target"
-  }
+  },
+  "post_build_source_hashes_match": true,
+  "review_context": "Citation and exposition update only. All Lean sources, specifications, dependency locks and build configuration are unchanged; fresh independent local-proof builds and trust=0 entry-point checks were run.",
+  "verification_log_sha256": "a8ffc510accd5f735a780d1ab79c5d0218591ae552eeffd49fef2f4ec5cf8d0c"
 }

@@ -1,6 +1,6 @@
 {
-  "utc_started": "2026-11-09T04:32:01.191586+00:00",
-  "build_directory": "/Users/strange/Desktop/hy\u7ed3\u679c/\u6838\u9a8c\u5de5\u4f5c\u533a_20261109/build_05a_release",
+  "utc_started": "2026-11-09T06:14:26.427927+00:00",
+  "build_directory": "/Users/strange/Desktop/hy结果/核验工作区_20261109/bibliography_refresh/build_05a",
   "initial_local_build_cache": false,
   "source_sha256": {
     "Audit.lean": "ce38dcec5bcfd58c264fe182375859532faa35f9a02ed6054c6fea5cc3b2610b",
@@ -45,7 +45,7 @@
         "--version"
       ],
       "exit_code": 0,
-      "elapsed_seconds": 0.047
+      "elapsed_seconds": 0.25
     },
     {
       "argv": [
@@ -53,7 +53,7 @@
         "--version"
       ],
       "exit_code": 0,
-      "elapsed_seconds": 0.051
+      "elapsed_seconds": 0.068
     },
     {
       "argv": [
@@ -61,7 +61,7 @@
         "build"
       ],
       "exit_code": 0,
-      "elapsed_seconds": 127.322
+      "elapsed_seconds": 209.496
     },
     {
       "argv": [
@@ -72,7 +72,7 @@
         "Problem05a/Spec.lean"
       ],
       "exit_code": 0,
-      "elapsed_seconds": 11.442
+      "elapsed_seconds": 17.235
     },
     {
       "argv": [
@@ -83,7 +83,7 @@
         "Problem05a/Proof.lean"
       ],
       "exit_code": 0,
-      "elapsed_seconds": 9.95
+      "elapsed_seconds": 17.128
     },
     {
       "argv": [
@@ -94,13 +94,13 @@
         "Audit.lean"
       ],
       "exit_code": 0,
-      "elapsed_seconds": 9.897
+      "elapsed_seconds": 25.611
     }
   ],
   "status": "passed",
   "scope": "full Problem 5a counterexample, all four exact global dimensions for all modules",
-  "source_commit": "fc5505a9eeea998188847a50ac774ddc8e2f7fef",
-  "utc_finished": "2026-11-09T04:34:39.903382+00:00",
+  "source_commit": "72944e9bddb22c2aa8f26ebd77187240e4e48834",
+  "utc_finished": "2026-11-09T06:18:56.281535+00:00",
   "axiom_closures": {
     "Problem05a.solution": [
       "Classical.choice",
@@ -134,5 +134,7 @@
     ]
   },
   "specification_review": "Full statement and arbitrary-module quantifiers checked against problem.md; no finite-generation or Noetherian restriction added.",
-  "post_build_source_hashes_match": true
+  "post_build_source_hashes_match": true,
+  "review_context": "Citation and exposition update only. All Lean sources, specifications, dependency locks and build configuration are unchanged; fresh independent local-proof builds and trust=0 entry-point checks were run.",
+  "verification_log_sha256": "ce7fbbb6e47da4a82c3bd004a8b4977d76bef27239ec1618595652db311d9cca"
 }

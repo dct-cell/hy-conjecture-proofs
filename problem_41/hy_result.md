@@ -56,7 +56,7 @@ We prove this.
 
 ## 1. A monomial integral-closure lemma
 
-We first recall that $\overline H$ is an ideal for every ideal $H$. Indeed, let $A=R[Ht]\subseteq R[t]$ be the Rees algebra. Then $u\in\overline H$ iff $ut$ is integral over $A$: one direction follows by multiplying an equation of integral dependence by $t^m$; the converse follows by taking the coefficient of $t^m$ in a monic equation for $ut$. Integral elements over a subring form a subring, so $\overline H$ is closed under sums and multiplication by elements of $R$. This argument is valid over every field.
+We first recall that $\overline H$ is an ideal for every ideal $H$. Indeed, let $A=R[Ht]\subseteq R[t]$ be the Rees algebra. Then $u\in\overline H$ iff $ut$ is integral over $A$: one direction follows by multiplying an equation of integral dependence by $t^m$; the converse follows by taking the coefficient of $t^m$ in a monic equation for $ut$. Integral elements over a subring form a subring, so $\overline H$ is closed under sums and multiplication by elements of $R$. This argument is valid over every field; see [1, Corollary 2.1.11 and Proposition 5.2.1] for these integral-closure facts.
 
 Define a weight valuation
 
@@ -235,3 +235,7 @@ Writing $v=(p,q,r)$, this is exactly condition $(\ast)$. Hence $P(2)$ is equival
 The algorithm displayed after the criterion is just condition $(\ast)$ with all rational inequalities multiplied by $L=\operatorname{lcm}(a,b,c)$. Therefore, by the theorem, it outputs “normal” exactly for the triples satisfying the criterion. Its loops are bounded by the displayed polynomial in $a,b,c$, so it terminates for every positive triple.
 
 Finally, every step above used only exponent arithmetic and the fact that $k[x,y,z]$ is a domain. The proof that $\overline H$ is an ideal used the Rees algebra and is valid for arbitrary fields. No assumption on the characteristic or on algebraic closure was made. Hence the classification given by $(\ast)$ is the same over every field $k$.
+
+## References
+
+1. Irena Swanson and Craig Huneke, *Integral Closure of Ideals, Rings, and Modules*, London Mathematical Society Lecture Note Series 336, Cambridge University Press, 2006. Corollary 2.1.11, p. 26 (integral elements form a ring), and Proposition 5.2.1, pp. 101–102 (integral closure and Rees algebras); §1.4, pp. 9–13 gives further background on monomial ideals. The finite criterion and the reduction to the square used here are proved above. [Author-hosted PDF](https://www.math.purdue.edu/~iswanso/book/SwansonHuneke.pdf).

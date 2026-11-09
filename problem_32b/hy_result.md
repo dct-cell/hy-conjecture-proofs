@@ -29,7 +29,7 @@ All colons and $v$-operations in the next three sections are taken with respect 
 
 ## 1. The basic properties of $D$
 
-The complete power-series theorem says that if $R$ is Noetherian, then so is $R[[X_1,\dots,X_n]]$.  Thus $k[[X,Y,Z]]$ is Noetherian, and $D$, being a homomorphic image, is Noetherian.  Every Noetherian ring has the ascending chain condition on all ideals.  Consequently every ascending chain of nonzero integral divisorial ideals of $D$ stabilizes; hence $D$ is Mori.
+The complete power-series theorem [1, Lemma 10.31.2] says that if $R$ is Noetherian, then so is $R[[X_1,\dots,X_n]]$.  Thus $k[[X,Y,Z]]$ is Noetherian, and $D$, being a homomorphic image, is Noetherian.  Every Noetherian ring has the ascending chain condition on all ideals.  Consequently every ascending chain of nonzero integral divisorial ideals of $D$ stabilizes; hence $D$ is Mori.
 
 We next identify the fraction field.  Since
 $$
@@ -47,7 +47,7 @@ $$
 $$
 Equation (3) also shows that $V$ is a finite $D$-module.  A finite ring extension is integral, so $V$ is integral over $D$.  The ring $V=k[[t]]$ is a DVR and hence integrally closed; therefore $V$ is the integral closure of $D$.
 
-We use the integral-extension theorem in the following precise form: if $A\subseteq B$ is an integral extension of domains, then lying over, going up, and incomparability give
+We use the integral-extension theorem [2, Lemma 10.112.4] in the following precise form: if $A\subseteq B$ is an integral extension of domains, then lying over, going up, and incomparability give
 $$
 \dim A=\dim B.
 $$
@@ -330,3 +330,8 @@ $$
 I=(t^4,t^5,t^{11})D
 $$
 is not stable.  This disproves the assertion.
+
+## References
+
+1. The Stacks Project Authors, *The Stacks Project*, Lemma 10.31.2, Noetherianity of formal power-series rings. [Tag 0306](https://stacks.math.columbia.edu/tag/0306).
+2. The Stacks Project Authors, *The Stacks Project*, Lemma 10.112.4, equality of dimensions under integral extensions. [Tag 00OK](https://stacks.math.columbia.edu/tag/00OK).

@@ -70,7 +70,7 @@ H_m=\langle g_0,\dots,g_m\rangle\cong C_2^{m+1}.
 $$
 Every element of $A$ lies in some $K[H_m]$, so $A=\bigcup_{m\ge0}K[H_m]$.  Each $K[H_m]$ is finite, and hence $A$ is countable.
 
-By Maschke’s theorem: if $H$ is finite and $|H|$ is invertible in a field $K$, then $K[H]$ is semisimple artinian.  Here $|H_m|=2^{m+1}$, and $2$ is invertible in $\mathbb F_3$.  Thus $K[H_m]$ is semisimple; since it is commutative, it is a finite product of fields.  (Explicitly, $K[C_2]\cong K\times K$, because $T^2-1=(T-1)(T+1)$ over $\mathbb F_3$, and then one takes tensor products.)  Consequently, if $a\in A$, then $a\in K[H_m]$ for some $m$, and inside the product of fields $K[H_m]$ there is $b\in K[H_m]$ with $a=a^2b$.  Hence $A$ is von Neumann regular.
+By Maschke’s theorem [1, Theorem 1]: if $H$ is finite and $|H|$ is invertible in a field $K$, then $K[H]$ is semisimple artinian.  Here $|H_m|=2^{m+1}$, and $2$ is invertible in $\mathbb F_3$.  Thus $K[H_m]$ is semisimple; since it is commutative, it is a finite product of fields.  (Explicitly, $K[C_2]\cong K\times K$, because $T^2-1=(T-1)(T+1)$ over $\mathbb F_3$, and then one takes tensor products.)  Consequently, if $a\in A$, then $a\in K[H_m]$ for some $m$, and inside the product of fields $K[H_m]$ there is $b\in K[H_m]$ with $a=a^2b$.  Hence $A$ is von Neumann regular.
 
 Since $A$ is countable, Fact 2 shows that every ideal of $A$ is projective.  Fact 1 then gives
 $$
@@ -146,7 +146,7 @@ Since $\operatorname{gl.dim}A=1$, the $A$-module $N$ has projective dimension at
 $$
 \operatorname{pd}_S(S\otimes_A N)\le1.
 $$
-The standard projective-dimension inequality in a short exact sequence $0\to U\to V\to W\to0$,
+The standard projective-dimension inequality in a short exact sequence $0\to U\to V\to W\to0$ [2, Lemma 10.109.9(3)],
 $$
 \operatorname{pd}W\le\max\{\operatorname{pd}V,\operatorname{pd}U+1\},
 $$
@@ -169,7 +169,7 @@ Reducing the presentation modulo $X$ gives an exact sequence of $A$-modules
 $$
 0\to Q/XP\to P/XP\to M\to0.
 $$
-Here $P/XP$ is $A$-projective.  Since $\operatorname{pd}_A M\le1$, every first syzygy of $M$ is projective; equivalently, by Schanuel’s lemma, $Q/XP$ is $A$-projective.
+Here $P/XP$ is $A$-projective.  Since $\operatorname{pd}_A M\le1$, every first syzygy of $M$ is projective; equivalently, by Schanuel’s lemma [3, Lemma 10.109.1], $Q/XP$ is $A$-projective.
 
 Now consider
 $$
@@ -251,3 +251,9 @@ $$
 \operatorname{gl.dim}R_2[G]=2.
 $$
 Thus the proposed implication is false, even for one fixed abelian group $G$ satisfying the admissibility condition for both coefficient rings.
+
+## References
+
+1. Keith Conrad, *Maschke’s theorem over general fields*, expository notes, Theorem 1, pp. 2–3. [PDF](https://kconrad.math.uconn.edu/blurbs/grouptheory/maschke.pdf).
+2. The Stacks Project Authors, *The Stacks Project*, Lemma 10.109.9, projective dimensions in a short exact sequence. [Tag 065S](https://stacks.math.columbia.edu/tag/065S).
+3. The Stacks Project Authors, *The Stacks Project*, Lemma 10.109.1, Schanuel’s lemma. [Tag 00O3](https://stacks.math.columbia.edu/tag/00O3).
