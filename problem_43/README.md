@@ -6,4 +6,4 @@ A counterexample after replacing the specified regularity hypothesis by normalit
 
 Text review: complete.
 
-Lean: Not yet formalized.
+Lean: partial local formalization. The full target is not yet verified; see the [coverage and audit report](../reports/2026-11-09-followup.md).
