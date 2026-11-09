@@ -6,4 +6,5 @@ A counterexample retaining the embeddings $A\subseteq D\subseteq T$, a Noetheria
 
 Text review: complete.
 
-Lean: Not yet formalized.
+Lean: Partial local formalization. The complete counterexample is not yet
+verified; see the [scope and audit report](../reports/2026-11-09-37c-44.md).

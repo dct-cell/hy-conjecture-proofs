@@ -6,4 +6,6 @@ A specified geometric construction of a two-dimensional complete normal Noetheri
 
 Text review: complete.
 
-Lean: Not yet formalized.
+Lean: Partial local formalization. The complete ring construction and its
+all-primary-ideals conclusion are not yet verified; see the
+[scope and audit report](../reports/2026-11-09-37c-44.md).
