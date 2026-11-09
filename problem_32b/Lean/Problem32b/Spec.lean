@@ -56,7 +56,7 @@ namespace Spec
 /-- The universal hypothesis: every nonzero divisorial ideal is two-v-generated. -/
 def AllTwoVGenerated (D : Subring K) : Prop :=
   ∀ I : Ideal D, I ≠ ⊥ → vClosure D (idealSet D I) = idealSet D I →
-    ∃ a b : D, a ∈ I ∧ b ∈ I ∧
+    ∃ a b : D, a ∈ I ∧ b ∈ I ∧ (a ≠ 0 ∨ b ≠ 0) ∧
       vClosure D (twoSpan D (a : K) (b : K)) = idealSet D I
 
 /-- The proposed conclusion: every nonzero divisorial ideal is stable. -/

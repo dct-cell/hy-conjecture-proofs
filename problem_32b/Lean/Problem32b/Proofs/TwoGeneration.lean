@@ -76,10 +76,11 @@ theorem scale_twoSpan (f b : K F) :
 theorem all_divisorial_ideals_two_generated (I : Set (K F))
     (hI : IsModuleSet (baseRing F) I) (hID : I ⊆ baseRing F)
     (hne : ∃ z ∈ I, z ≠ 0) (hv : vClosure (baseRing F) I = I) :
-    ∃ a ∈ I, ∃ b ∈ I, vClosure (baseRing F) (twoSpan (baseRing F) a b) = I := by
+    ∃ a ∈ I, ∃ b ∈ I, a ≠ 0 ∧
+      vClosure (baseRing F) (twoSpan (baseRing F) a b) = I := by
   obtain ⟨f,L,hf,hf0,hL,hDL,hLV,hvL,hIL⟩ := normalize F I hI hID hne hv
   obtain ⟨b,hb,he⟩ := normalized_two_generated L hDL hLV hvL
-  refine ⟨f,hf,f*b,?_,?_⟩
+  refine ⟨f,hf,f*b,?_,hf0,?_⟩
   · rw [hIL]
     exact ⟨b,hb,rfl⟩
   · rw [← scale_twoSpan,scale_vClosure _ _ _ hf0,he,← hIL]
