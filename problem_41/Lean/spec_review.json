@@ -1,0 +1,15 @@
+{
+  "specification": "Problem41/Spec.lean",
+  "sha256": "4467fd73e85265cb4a4b0ee61b0a4d89732045301d0ad277c036f67106931c59",
+  "review": {
+    "field": "arbitrary field, no characteristic restriction; expanded theorem is universe-polymorphic",
+    "parameters": "all positive a,b,c; every positive ideal power",
+    "integrality": "monic equation with coefficient of X^i in H^(natDegree-i); a degree-zero monic polynomial cannot vanish in this polynomial domain",
+    "closure": "an actual ideal with exactly the integral elements; the final expanded theorem states both inclusions for every power",
+    "algorithm": "bounded finite ranges and exact rational comparisons",
+    "sources": "problem_41/problem.md and problem_41/hy_result.md",
+    "proof_independence": "Spec.lean imports Mathlib only; its frozen content is unchanged"
+  },
+  "development_build": "passed",
+  "independent_kernel_audit": "pending"
+}
