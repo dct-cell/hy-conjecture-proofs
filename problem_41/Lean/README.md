@@ -15,4 +15,6 @@ lake exe cache get
 ./verify.sh
 ```
 
-`verify.sh` runs `lake build`, then `--trust=0` on the specification, proof and audit entry points. A fresh audit of this source commit is pending; no historical log is used for it.
+`verify.sh` runs `lake build`, then `--trust=0` on the specification, proof and audit entry points. The full target passed an independent clean local-module rebuild and all three kernel checks on 2026-11-09. The checked source commit is `8df3618d142283db73d0a2f4bbe4b124636e06f0`.
+
+See [the complete log](verification.log), [commands, exit codes, versions and hashes](verification.json), and [the separate specification review](spec_review.json). The final theorem depends only on `propext`, `Classical.choice`, and `Quot.sound`. No unproved axiom or placeholder occurs in its dependency closure.

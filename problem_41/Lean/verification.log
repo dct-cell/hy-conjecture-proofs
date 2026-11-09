@@ -1,0 +1,145 @@
+
+$ lean --version
+Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)
+
+EXIT_CODE=0
+
+$ lake --version
+Lake version 5.0.0-src+eb6cafb (Lean version 4.35.0)
+
+EXIT_CODE=0
+
+$ lake build
+⚠ [9047/9058] Built Problem41.Spec (37s)
+warning: Problem41/Spec.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+✔ [9048/9058] Built Problem41.Proofs.FiniteCriterion (19s)
+⚠ [9049/9058] Built Problem41.Proofs.ReesCriterion (19s)
+warning: Problem41/Proofs/ReesCriterion.lean: imports `Mathlib.RingTheory.ReesAlgebra` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: Problem41/Proofs/ReesCriterion.lean: imports `Mathlib.RingTheory.IntegralClosure.Algebra.Ideal` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+✔ [9050/9058] Built Problem41.Proofs.IntegralDegreeBound (20s)
+✔ [9051/9058] Built Problem41.Proofs.MonomialIdeals (9.3s)
+✔ [9052/9058] Built Problem41.Proofs.Homogenization (10s)
+✔ [9053/9058] Built Problem41.Proofs.IdealPowers (10s)
+✔ [9054/9058] Built Problem41.Proofs.IntegralClosure (9.1s)
+✔ [9055/9058] Built Problem41.Proofs.IntegralClosurePowers (15s)
+✔ [9056/9058] Built Problem41.Proof (9.3s)
+✔ [9057/9058] Built Problem41 (16s)
+Build completed successfully (9058 jobs).
+
+EXIT_CODE=0
+
+$ lake env lean --trust=0 Problem41/Spec.lean
+
+EXIT_CODE=0
+
+$ lake env lean --trust=0 Problem41/Proof.lean
+
+EXIT_CODE=0
+
+$ lake env lean --trust=0 Audit.lean
+def Problem41.IntegralOverIdeal.{u_1} : {R : Type u_1} → [inst : CommRing.{u_1} R] → Ideal.{u_1} R → R → Prop :=
+fun {R} [CommRing.{u_1} R] I x =>
+  ∃ p,
+    Polynomial.Monic.{u_1} p ∧
+      Eq.{u_1 + 1} (Polynomial.eval.{u_1} x p) 0 ∧
+        ∀ (i : ℕ),
+          Membership.mem.{u_1, u_1} (HPow.hPow.{u_1, 0, u_1} I (HSub.hSub.{0, 0, 0} (Polynomial.natDegree.{u_1} p) i))
+            ((Polynomial.coeff.{u_1} p) i)
+def Problem41.IntegrallyClosedIdeal.{u_1} : {R : Type u_1} → [inst : CommRing.{u_1} R] → Ideal.{u_1} R → Prop :=
+fun {R} [CommRing.{u_1} R] I => ∀ (x : R), Problem41.IntegralOverIdeal.{u_1} I x → Membership.mem.{u_1, u_1} I x
+def Problem41.pureIdeal.{u_1} : (k : Type u_1) →
+  [inst : Field.{u_1} k] → ℕ → ℕ → ℕ → Ideal.{u_1} (MvPolynomial.{0, u_1} (Fin 3) k) :=
+fun k [Field.{u_1} k] a b c =>
+  Ideal.span.{u_1}
+    (insert.{u_1, u_1} (HPow.hPow.{u_1, 0, u_1} (MvPolynomial.X.{u_1, 0} 0) a)
+      (insert.{u_1, u_1} (HPow.hPow.{u_1, 0, u_1} (MvPolynomial.X.{u_1, 0} 1) b)
+        (singleton.{u_1, u_1} (HPow.hPow.{u_1, 0, u_1} (MvPolynomial.X.{u_1, 0} 2) c))))
+def Problem41.NormalIntegralClosure.{u_1} : (k : Type u_1) → [Field.{u_1} k] → ℕ → ℕ → ℕ → Prop :=
+fun k [Field.{u_1} k] a b c =>
+  ∃ I,
+    (∀ (f : MvPolynomial.{0, u_1} (Fin 3) k),
+        Membership.mem.{u_1, u_1} I f ↔ Problem41.IntegralOverIdeal.{u_1} (Problem41.pureIdeal.{u_1} k a b c) f) ∧
+      ∀ (n : ℕ), LT.lt.{0} 0 n → Problem41.IntegrallyClosedIdeal.{u_1} (HPow.hPow.{u_1, 0, u_1} I n)
+def Problem41.decideBox : ℕ → ℕ → ℕ → Bool :=
+fun a b c =>
+  List.all.{0} (List.range a) fun i =>
+    List.all.{0} (List.range b) fun j =>
+      List.all.{0} (List.range c) fun l =>
+        ite.{1} (LE.le.{0} 2 (Problem41.weight a b c i j l))
+          (List.any.{0} (List.range (HAdd.hAdd.{0, 0, 0} i 1)) fun p =>
+            List.any.{0} (List.range (HAdd.hAdd.{0, 0, 0} j 1)) fun q =>
+              List.any.{0} (List.range (HAdd.hAdd.{0, 0, 0} l 1)) fun r =>
+                decide
+                  (LE.le.{0} 1 (Problem41.weight a b c p q r) ∧
+                    LE.le.{0} 1
+                      (Problem41.weight a b c (HSub.hSub.{0, 0, 0} i p) (HSub.hSub.{0, 0, 0} j q)
+                        (HSub.hSub.{0, 0, 0} l r))))
+          true
+def Problem41.Claim : Prop :=
+∀ (k : Type) [inst : Field.{0} k] (a b c : ℕ),
+  LT.lt.{0} 0 a →
+    LT.lt.{0} 0 b →
+      LT.lt.{0} 0 c → (Eq.{1} (Problem41.decideBox a b c) true ↔ Problem41.NormalIntegralClosure.{0} k a b c)
+theorem Problem41.solution : Problem41.Claim :=
+⋯
+'Problem41.solution' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+theorem Problem41.complete_classification.{u_1} : ∀ (k : Type u_1) [inst : Field.{u_1} k] (a b c : ℕ),
+  LT.lt.{0} 0 a →
+    LT.lt.{0} 0 b →
+      LT.lt.{0} 0 c →
+        (Eq.{1} (Problem41.decideBox a b c) true ↔
+          ∃ I,
+            (∀ (f : MvPolynomial.{0, u_1} (Fin 3) k),
+                Membership.mem.{u_1, u_1} I f ↔
+                  Problem41.IntegralOverIdeal.{u_1} (Problem41.pureIdeal.{u_1} k a b c) f) ∧
+              ∀ (n : ℕ),
+                LT.lt.{0} 0 n →
+                  ∀ (f : MvPolynomial.{0, u_1} (Fin 3) k),
+                    Problem41.IntegralOverIdeal.{u_1} (HPow.hPow.{u_1, 0, u_1} I n) f ↔
+                      Membership.mem.{u_1, u_1} (HPow.hPow.{u_1, 0, u_1} I n) f) :=
+⋯
+'Problem41.complete_classification' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+theorem Problem41.integral_closure_pureIdeal.{u_1} : ∀ (k : Type u_1) [inst : Field.{u_1} k] {a b c : ℕ},
+  LT.lt.{0} 0 a →
+    LT.lt.{0} 0 b →
+      LT.lt.{0} 0 c →
+        ∀ (f : MvPolynomial.{0, u_1} (Fin 3) k),
+          Problem41.IntegralOverIdeal.{u_1} (Problem41.pureIdeal.{u_1} k a b c) f ↔
+            Membership.mem.{u_1, u_1} (Problem41.weightedIdeal.{u_1} k a b c 1) f :=
+⋯
+'Problem41.integral_closure_pureIdeal' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+theorem Problem41.integral_closure_weightedIdeal_pow.{u_1} : ∀ (k : Type u_1) [inst : Field.{u_1} k] {a b c : ℕ},
+  LT.lt.{0} 0 a →
+    LT.lt.{0} 0 b →
+      LT.lt.{0} 0 c →
+        ∀ {n : ℕ},
+          LT.lt.{0} 0 n →
+            ∀ (f : MvPolynomial.{0, u_1} (Fin 3) k),
+              Problem41.IntegralOverIdeal.{u_1} (HPow.hPow.{u_1, 0, u_1} (Problem41.weightedIdeal.{u_1} k a b c 1) n)
+                  f ↔
+                Membership.mem.{u_1, u_1} (Problem41.weightedIdeal.{u_1} k a b c n) f :=
+⋯
+'Problem41.integral_closure_weightedIdeal_pow' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+theorem Problem41.monomial_mem_weightedIdeal_pow.{u_1} : ∀ (k : Type u_1) [inst : Field.{u_1} k] (a b c n : ℕ),
+  LT.lt.{0} 0 n →
+    ∀ (d : Finsupp.{0, 0} (Fin 3) ℕ),
+      Membership.mem.{u_1, u_1} (HPow.hPow.{u_1, 0, u_1} (Problem41.weightedIdeal.{u_1} k a b c 1) n)
+          ((MvPolynomial.monomial.{u_1, 0} d) 1) ↔
+        Problem41.Decomposes a b c n (d 0) (d 1) (d 2) :=
+⋯
+'Problem41.monomial_mem_weightedIdeal_pow' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+theorem Problem41.box_iff_all_decompositions : ∀ {a b c : ℕ},
+  LT.lt.{0} 0 a →
+    LT.lt.{0} 0 b →
+      LT.lt.{0} 0 c →
+        (Problem41.BoxCriterion a b c ↔
+          ∀ (n i j l : ℕ),
+            LT.lt.{0} 0 n → LE.le.{0} (↑n) (Problem41.weight a b c i j l) → Problem41.Decomposes a b c n i j l) :=
+⋯
+'Problem41.box_iff_all_decompositions' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+theorem Problem41.decideBox_correct : ∀ (a b c : ℕ),
+  Eq.{1} (Problem41.decideBox a b c) true ↔ Problem41.BoxCriterion a b c :=
+⋯
+'Problem41.decideBox_correct' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+
+EXIT_CODE=0

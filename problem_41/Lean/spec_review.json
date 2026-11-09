@@ -11,5 +11,6 @@
     "proof_independence": "Spec.lean imports Mathlib only; its frozen content is unchanged"
   },
   "development_build": "passed",
-  "independent_kernel_audit": "pending"
+  "independent_kernel_audit": "passed 2026-11-09",
+  "target_proved": true
 }

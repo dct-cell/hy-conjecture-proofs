@@ -1,0 +1,136 @@
+{
+  "utc_started": "2026-11-09T04:19:54.971765+00:00",
+  "build_directory": "/Users/strange/Desktop/hy\u7ed3\u679c/\u6838\u9a8c\u5de5\u4f5c\u533a_20261109/build_41_release",
+  "initial_local_build_cache": false,
+  "source_sha256": {
+    "Problem41.lean": "94d6ac00d4e747997221a86d4c49c547a5315fa36877599594a93a26ad7f1316",
+    "Audit.lean": "e65ffac8668e86d977fe3a8e37b6de45027659bc8854e89e24201b7ee5bb6011",
+    "Problem41/Proof.lean": "7b3b593533e398403ea3016f38ea8755fd064c75b53ee8334821caefb52e5147",
+    "Problem41/Spec.lean": "4467fd73e85265cb4a4b0ee61b0a4d89732045301d0ad277c036f67106931c59",
+    "Problem41/Proofs/Homogenization.lean": "4765fa681df1f178b7daacc087d94024d7e01eb9c0907a97cb8cd8edf53e613d",
+    "Problem41/Proofs/MonomialIdeals.lean": "ef2e81d7cbcc9038b675e52e7cb9bc22c53dc834cfd07757c704e4e714802bd7",
+    "Problem41/Proofs/IntegralClosurePowers.lean": "58769f1a22a19801f5d545938952907e7ca53b94000e49ff0b2d443c5b484118",
+    "Problem41/Proofs/IdealPowers.lean": "cedbc4049172c69cecc9410e9ee0021cadf7c51316afb986e4f33ab6a52b2e7b",
+    "Problem41/Proofs/IntegralDegreeBound.lean": "161430c2b62bba81d686f19fcd89b868a18f8112d302fa698f25b2e9cd518f08",
+    "Problem41/Proofs/IntegralClosure.lean": "284a485b4507aa1551e7fc6e9e6fc346bc5b2da918fd72735c9914d9aeef6ed2",
+    "Problem41/Proofs/FiniteCriterion.lean": "931f4ef38a84a206664a771b9172497df9bc026a20855b6563bfdb849444c526",
+    "Problem41/Proofs/ReesCriterion.lean": "169a299b708c1da2685d0a950f67a03e345c22c8470b3953b1c004be261b8b9a",
+    "lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lakefile.toml": "126f45716376a072a8897cc5ef95740bb7e16c327b3b59ea23266124ed6f2c60",
+    "lake-manifest.json": "ad7b6d4a4080e989650b6160dbf21a708d71d5b44492330b2c67c086deee9c81",
+    "verify.sh": "3e7985c9eff4328b7c1e540e7e64f89beebd29800c97a9044e42168642a312a5"
+  },
+  "dependency_revisions": {
+    "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+    "plausible": "dfa4f38190d07c37e315953e08b90fe2d95b3c24",
+    "LeanSearchClient": "d6b4c7be5be75ec4917c873ac50c756dc1436372",
+    "importGraph": "a41f0e9a4dea23188ea9cc1c41ac9f8bbafe0b93",
+    "proofwidgets": "df72b022e558978a1c50264cfc4d7fec86fa8e04",
+    "aesop": "4a174c490d8707121c4a9290800489f105d85e07",
+    "Qq": "dce0ad79c486cb1fb504af04f953c3466b0c6db8",
+    "batteries": "66e469188fe07963e5cf666c7d4433f45b8131c5",
+    "Cli": "c24fe6078c630e89b489bffe59b3e20ac30d12c8"
+  },
+  "commands": [
+    {
+      "argv": [
+        "lean",
+        "--version"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.047
+    },
+    {
+      "argv": [
+        "lake",
+        "--version"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.05
+    },
+    {
+      "argv": [
+        "lake",
+        "build"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 134.231
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "Problem41/Spec.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 12.007
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "Problem41/Proof.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 11.754
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "Audit.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 11.283
+    }
+  ],
+  "status": "passed",
+  "scope": "full original Problem 41, all fields and all positive triples",
+  "source_commit": "8df3618d142283db73d0a2f4bbe4b124636e06f0",
+  "utc_finished": "2026-11-09T04:22:44.347968+00:00",
+  "axiom_closures": {
+    "Problem41.solution": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Problem41.complete_classification": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Problem41.integral_closure_pureIdeal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Problem41.integral_closure_weightedIdeal_pow": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Problem41.monomial_mem_weightedIdeal_pow": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Problem41.box_iff_all_decompositions": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Problem41.decideBox_correct": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "full_problem_proved": true,
+  "specification_review": "passed; frozen Spec.lean unchanged; original ideal definition and all positive powers covered"
+}

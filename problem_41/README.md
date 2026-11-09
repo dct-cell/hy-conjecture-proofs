@@ -6,4 +6,4 @@ An algorithmic classification for all positive integer triples: a terminating fi
 
 Text review: complete.
 
-Lean: Not yet formalized.
+Lean: [Full formalization verified](Lean/README.md) (2026-11-09), including the connection to actual polynomial ideals, all fields and all positive powers. [Verification log](Lean/verification.log).
