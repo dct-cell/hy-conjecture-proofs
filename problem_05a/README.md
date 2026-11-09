@@ -6,4 +6,4 @@ A counterexample to determination of group-ring global dimension from the base r
 
 Text review: complete.
 
-Lean: Not yet formalized.
+Lean: **Full formalization verified (2026-11-09)**. See the [independent project](Lean/), [specification review](Lean/spec_review.json), and [verification records](Lean/verification.json). The theorem covers the same group, both admissibility conditions, and all four exact global dimensions, with arbitrary modules.

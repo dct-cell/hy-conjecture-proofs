@@ -1,0 +1,394 @@
+
+$ lean --version
+Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)
+
+EXIT_CODE=0
+
+$ lake --version
+Lake version 5.0.0-src+eb6cafb (Lean version 4.35.0)
+
+EXIT_CODE=0
+
+$ lake build
+⚠ [9047/9065] Built Problem05a.Spec (36s)
+warning: Problem05a/Spec.lean: imports `Mathlib` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [9048/9065] Built Problem05a.Proofs.RingEquivalence (13s)
+warning: Problem05a/Proofs/RingEquivalence.lean:16:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [9049/9065] Built Problem05a.Proofs.GroupAlgebra (13s)
+warning: Problem05a/Proofs/GroupAlgebra.lean:25:35: This simp argument is unused:
+  cube_coeff
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [smul_pow, hx]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [9050/9065] Built Problem05a.Proofs.IdealsOfHereditary (13s)
+warning: Problem05a/Proofs/IdealsOfHereditary.lean:8:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Problem05a/Proofs/IdealsOfHereditary.lean:9:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Problem05a/Proofs/IdealsOfHereditary.lean:18:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Problem05a/Proofs/IdealsOfHereditary.lean:21:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [9051/9065] Built Problem05a.Proofs.LocalPartition (14s)
+⚠ [9052/9065] Built Problem05a.Proofs.BaseChangeDimension (14s)
+warning: Problem05a/Proofs/BaseChangeDimension.lean:15:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Problem05a/Proofs/BaseChangeDimension.lean:16:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Problem05a/Proofs/BaseChangeDimension.lean:17:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Problem05a/Proofs/BaseChangeDimension.lean:20:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Problem05a/Proofs/BaseChangeDimension.lean:22:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [9053/9065] Built Problem05a.Proofs.PolynomialResolution (14s)
+✔ [9054/9065] Built Problem05a.Proofs.Admissibility (16s)
+✔ [9055/9065] Built Problem05a.Proofs.CountableIdeals (16s)
+⚠ [9056/9065] Built Problem05a.Proofs.PolynomialUpper (16s)
+warning: Problem05a/Proofs/PolynomialUpper.lean:12:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Problem05a/Proofs/PolynomialUpper.lean:13:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Problem05a/Proofs/PolynomialUpper.lean:14:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Problem05a/Proofs/PolynomialUpper.lean:15:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Problem05a/Proofs/PolynomialUpper.lean:17:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [9057/9065] Built Problem05a.Proofs.Hereditary (9.1s)
+warning: Problem05a/Proofs/Hereditary.lean:17:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Problem05a/Proofs/Hereditary.lean:33:4: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Problem05a/Proofs/Hereditary.lean:36:4: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Problem05a/Proofs/Hereditary.lean:37:4: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Problem05a/Proofs/Hereditary.lean:39:4: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Problem05a/Proofs/Hereditary.lean:44:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Problem05a/Proofs/Hereditary.lean:47:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [9058/9065] Built Problem05a.Proofs.Augmentation (10s)
+warning: Problem05a/Proofs/Augmentation.lean:27:0: Definition `Problem05a.augmentationModule` of class type is semireducible. Most type class instances should be instance-reducible, so consider marking this
+definition with `@[instance_reducible]`. If it is intentionally semireducible, this warning can be disabled with `set_option warn.classDefReducibility false`.
+warning: Problem05a/Proofs/Augmentation.lean:33:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Problem05a/Proofs/Augmentation.lean:59:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Problem05a/Proofs/Augmentation.lean:61:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Problem05a/Proofs/Augmentation.lean:63:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [9059/9065] Built Problem05a.Proofs.PolynomialBase (10s)
+⚠ [9060/9065] Built Problem05a.Proofs.PolynomialBaseLower (13s)
+warning: Problem05a/Proofs/PolynomialBaseLower.lean:6:0: Definition `Problem05a.residueModule` of class type is semireducible. Most type class instances should be instance-reducible, so consider marking this
+definition with `@[instance_reducible]`. If it is intentionally semireducible, this warning can be disabled with `set_option warn.classDefReducibility false`.
+warning: Problem05a/Proofs/PolynomialBaseLower.lean:12:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Problem05a/Proofs/PolynomialBaseLower.lean:37:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Problem05a/Proofs/PolynomialBaseLower.lean:39:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Problem05a/Proofs/PolynomialBaseLower.lean:41:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [9061/9065] Built Problem05a.Proofs.IteratedGroupAlgebra (13s)
+warning: Problem05a/Proofs/IteratedGroupAlgebra.lean:44:0: Definition `Problem05a.Iterated.augmentationModule` of class type is semireducible. Most type class instances should be instance-reducible, so consider marking this
+definition with `@[instance_reducible]`. If it is intentionally semireducible, this warning can be disabled with `set_option warn.classDefReducibility false`.
+warning: Problem05a/Proofs/IteratedGroupAlgebra.lean:50:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Problem05a/Proofs/IteratedGroupAlgebra.lean:76:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Problem05a/Proofs/IteratedGroupAlgebra.lean:78:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Problem05a/Proofs/IteratedGroupAlgebra.lean:80:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [9062/9065] Built Problem05a.Proofs.PolynomialLower (14s)
+⚠ [9063/9065] Built Problem05a.Proof (8.7s)
+warning: Problem05a/Proof.lean:25:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+✔ [9064/9065] Built Problem05a (9.5s)
+Build completed successfully (9065 jobs).
+
+EXIT_CODE=0
+
+$ lake env lean --trust=0 Problem05a/Spec.lean
+
+EXIT_CODE=0
+
+$ lake env lean --trust=0 Problem05a/Proof.lean
+Problem05a/Proof.lean:25:2: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+
+EXIT_CODE=0
+
+$ lake env lean --trust=0 Audit.lean
+@[reducible] def Problem05a.G : Type :=
+Finsupp.{0, 0} ℕ (ZMod 2)
+@[reducible] def Problem05a.A : Type :=
+AddMonoidAlgebra.{0, 0} (ZMod 3) Problem05a.G
+@[reducible] def Problem05a.B : Type :=
+Polynomial.{0} (ZMod 3)
+def Problem05a.GlobalDimensionLE.{u, v} : (R : Type u) → [Ring.{u} R] → ℕ → Prop :=
+fun R [Ring.{u} R] n =>
+  ∀ (M : ModuleCat.{max u v, u} R), CategoryTheory.HasProjectiveDimensionLE.{max u v, max (u + 1) (v + 1)} M n
+def Problem05a.GlobalDimensionEq.{u, v} : (R : Type u) → [Ring.{u} R] → ℕ → Prop :=
+fun R [Ring.{u} R] n =>
+  Problem05a.GlobalDimensionLE.{u, v} R n ∧ ∀ (m : ℕ), LT.lt.{0} m n → ¬Problem05a.GlobalDimensionLE.{u, v} R m
+def Problem05a.Admissible.{u_1} : (R : Type u_1) → [CommRing.{u_1} R] → Prop :=
+fun R [CommRing.{u_1} R] => ∀ (g : Problem05a.G), IsOfFinAddOrder.{0} g → IsUnit.{u_1} ↑(addOrderOf.{0} g)
+def Problem05a.Claim.{v} : Prop :=
+Problem05a.Admissible.{0} Problem05a.A ∧
+  Problem05a.Admissible.{0} Problem05a.B ∧
+    Problem05a.GlobalDimensionEq.{0, v} Problem05a.A 1 ∧
+      Problem05a.GlobalDimensionEq.{0, v} Problem05a.B 1 ∧
+        Problem05a.GlobalDimensionEq.{0, v} (AddMonoidAlgebra.{0, 0} Problem05a.A Problem05a.G) 1 ∧
+          Problem05a.GlobalDimensionEq.{0, v} (AddMonoidAlgebra.{0, 0} Problem05a.B Problem05a.G) 2
+Problem05a.solution.{u_1} : Problem05a.Claim.{u_1}
+Problem05a.expanded_counterexample.{u_1} : (∀ (g : Problem05a.G),
+    IsOfFinAddOrder.{0} g → IsUnit.{0} ↑(addOrderOf.{0} g)) ∧
+  (∀ (g : Problem05a.G), IsOfFinAddOrder.{0} g → IsUnit.{0} ↑(addOrderOf.{0} g)) ∧
+    (∀ (M : ModuleCat.{u_1, 0} Problem05a.A), CategoryTheory.HasProjectiveDimensionLE.{u_1, u_1 + 1} M 1) ∧
+      (¬∀ (M : ModuleCat.{u_1, 0} Problem05a.A), CategoryTheory.HasProjectiveDimensionLE.{u_1, u_1 + 1} M 0) ∧
+        (∀ (M : ModuleCat.{u_1, 0} Problem05a.B), CategoryTheory.HasProjectiveDimensionLE.{u_1, u_1 + 1} M 1) ∧
+          (¬∀ (M : ModuleCat.{u_1, 0} Problem05a.B), CategoryTheory.HasProjectiveDimensionLE.{u_1, u_1 + 1} M 0) ∧
+            (∀ (M : ModuleCat.{u_1, 0} (AddMonoidAlgebra.{0, 0} Problem05a.A Problem05a.G)),
+                CategoryTheory.HasProjectiveDimensionLE.{u_1, u_1 + 1} M 1) ∧
+              (¬∀ (M : ModuleCat.{u_1, 0} (AddMonoidAlgebra.{0, 0} Problem05a.A Problem05a.G)),
+                    CategoryTheory.HasProjectiveDimensionLE.{u_1, u_1 + 1} M 0) ∧
+                (∀ (M : ModuleCat.{u_1, 0} (AddMonoidAlgebra.{0, 0} Problem05a.B Problem05a.G)),
+                    CategoryTheory.HasProjectiveDimensionLE.{u_1, u_1 + 1} M 2) ∧
+                  ¬∀ (M : ModuleCat.{u_1, 0} (AddMonoidAlgebra.{0, 0} Problem05a.B Problem05a.G)),
+                      CategoryTheory.HasProjectiveDimensionLE.{u_1, u_1 + 1} M 1
+'Problem05a.solution' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+'Problem05a.expanded_counterexample' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+'Problem05a.ideals_projective_of_cube' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+'Problem05a.globalDimensionLE_one_of_ideals_projective' depends on axioms: [propext,
+ Classical.choice.{u},
+ Quot.sound.{u}]
+'Problem05a.polynomial_dimension_le_two' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+'Problem05a.PolynomialLower.obstruction_not_projective' depends on axioms: [propext,
+ Classical.choice.{u},
+ Quot.sound.{u}]
+
+EXIT_CODE=0

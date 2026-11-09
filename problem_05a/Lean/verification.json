@@ -1,0 +1,138 @@
+{
+  "utc_started": "2026-11-09T04:32:01.191586+00:00",
+  "build_directory": "/Users/strange/Desktop/hy\u7ed3\u679c/\u6838\u9a8c\u5de5\u4f5c\u533a_20261109/build_05a_release",
+  "initial_local_build_cache": false,
+  "source_sha256": {
+    "Audit.lean": "ce38dcec5bcfd58c264fe182375859532faa35f9a02ed6054c6fea5cc3b2610b",
+    "Problem05a.lean": "a22f02d396597a24f41f0988ce98951d889108522e23b65166b5941fdf560751",
+    "Problem05a/Proof.lean": "4c458246384b373d249ba2daa57ba0a74c05031f07549ba4bbf88b48997ea104",
+    "Problem05a/Spec.lean": "32c9f2007dd226ebecf8af8cce36d0d35b9f9894ca50a8d915385c263e05833a",
+    "Problem05a/Proofs/GroupAlgebra.lean": "29e0ef3cb2da526d1fced54dd9ba6f4551376e6301ad2b8f55a34839e233f6cc",
+    "Problem05a/Proofs/PolynomialLower.lean": "231e9c10ca9a097123a76e8a1fbdf755cca47b8fc1b2ceae9ce2f37e98bae6e4",
+    "Problem05a/Proofs/PolynomialResolution.lean": "87d4133cebed8a152a07a7ae2bbf7a4c989926f8d11e90eeee47c5e3beb73733",
+    "Problem05a/Proofs/IdealsOfHereditary.lean": "af99b9d6c5494337130dad00066b5e50e23e6de526c53d9fbef2079220b2b1ce",
+    "Problem05a/Proofs/Hereditary.lean": "7f6dff90c54b9f902b9e4f051941c139e46dfd2c94c5c95a0ee6f5658dbc57e4",
+    "Problem05a/Proofs/PolynomialBase.lean": "a8b49de5db4fb487391f966a9500185a98abf9ffa82112dac727ebb2314156c1",
+    "Problem05a/Proofs/Augmentation.lean": "ef4cb56d0e02c5207542d2c91c97f6dc763fe64eb38910e7813bd9cf300b2d87",
+    "Problem05a/Proofs/IteratedGroupAlgebra.lean": "69cb08364e733c548e3ce87ac860c220bd96047e0b163eb7741dd2a042a52829",
+    "Problem05a/Proofs/PolynomialBaseLower.lean": "f195909500c4b3b94b38c46e57e5202b2da9d9aa40535a5828f2c0c6534ab49a",
+    "Problem05a/Proofs/LocalPartition.lean": "bb0c4373ccdb7fc0e960c9b86acea6563de685fa35bd245031d876996579979b",
+    "Problem05a/Proofs/RingEquivalence.lean": "580084e14c248ed4bd4ec4bfe5e5e5262c035765ded7664952f5cefae7e7e4f9",
+    "Problem05a/Proofs/BaseChangeDimension.lean": "e4535dc3504611d20baea15ee8eb70a654a9709a85057f3bedf63e94dce536c5",
+    "Problem05a/Proofs/Admissibility.lean": "fd9e77de6ac8b7c4347efc449a9649094ff159ad1654df2ab8888dfc0d0c26ae",
+    "Problem05a/Proofs/CountableIdeals.lean": "9fc621a33f8c34a971112336cd1abac57f76ac9a5a87c8ac048aa6f274933af6",
+    "Problem05a/Proofs/PolynomialUpper.lean": "8fe81dda098973daf973ae141a12b89aba1820a9e90bc18f8a90f44e974228b8",
+    "lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lakefile.toml": "dedfb766bd3b9c14037ed7a370a17dee8c7c0f97bfd94736a7c13cfbfbe1fdf3",
+    "lake-manifest.json": "320dfe767e9ec5a5c9ff26194a4cf3483e4cb490243b6ddde8561fbaa2906607",
+    "verify.sh": "1f032c949df2465658aa1770cd344dca4eb91066de0b1d359968622efa71f401"
+  },
+  "dependency_revisions": {
+    "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+    "plausible": "dfa4f38190d07c37e315953e08b90fe2d95b3c24",
+    "LeanSearchClient": "d6b4c7be5be75ec4917c873ac50c756dc1436372",
+    "importGraph": "a41f0e9a4dea23188ea9cc1c41ac9f8bbafe0b93",
+    "proofwidgets": "df72b022e558978a1c50264cfc4d7fec86fa8e04",
+    "aesop": "4a174c490d8707121c4a9290800489f105d85e07",
+    "Qq": "dce0ad79c486cb1fb504af04f953c3466b0c6db8",
+    "batteries": "66e469188fe07963e5cf666c7d4433f45b8131c5",
+    "Cli": "c24fe6078c630e89b489bffe59b3e20ac30d12c8"
+  },
+  "commands": [
+    {
+      "argv": [
+        "lean",
+        "--version"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.047
+    },
+    {
+      "argv": [
+        "lake",
+        "--version"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.051
+    },
+    {
+      "argv": [
+        "lake",
+        "build"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 127.322
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "Problem05a/Spec.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 11.442
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "Problem05a/Proof.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.95
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--trust=0",
+        "Audit.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.897
+    }
+  ],
+  "status": "passed",
+  "scope": "full Problem 5a counterexample, all four exact global dimensions for all modules",
+  "source_commit": "fc5505a9eeea998188847a50ac774ddc8e2f7fef",
+  "utc_finished": "2026-11-09T04:34:39.903382+00:00",
+  "axiom_closures": {
+    "Problem05a.solution": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Problem05a.expanded_counterexample": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Problem05a.ideals_projective_of_cube": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Problem05a.globalDimensionLE_one_of_ideals_projective": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Problem05a.polynomial_dimension_le_two": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Problem05a.PolynomialLower.obstruction_not_projective": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "specification_review": "Full statement and arbitrary-module quantifiers checked against problem.md; no finite-generation or Noetherian restriction added.",
+  "post_build_source_hashes_match": true
+}

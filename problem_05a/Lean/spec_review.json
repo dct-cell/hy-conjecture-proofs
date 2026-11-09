@@ -14,7 +14,7 @@
     ],
     "proof_independence": "Spec imports Mathlib only; proof modules do not alter or redefine the specification."
   },
-  "development_build": "passed, including full expanded theorem and development kernel audit",
-  "independent_kernel_audit": "pending",
-  "target_proved": false
+  "development_build": "passed",
+  "independent_kernel_audit": "passed 2026-11-09",
+  "target_proved": true
 }
