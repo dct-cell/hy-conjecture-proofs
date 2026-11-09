@@ -1,0 +1,20 @@
+{
+  "specification": "Problem05a/Spec.lean",
+  "sha256": "32c9f2007dd226ebecf8af8cce36d0d35b9f9894ca50a8d915385c263e05833a",
+  "review": {
+    "group": "The fixed abelian torsion group is the direct sum of countably many cyclic groups of order 2; AddMonoidAlgebra uses additive notation for its group ring.",
+    "coefficient_rings": "Actual A = F_3[G] and B = F_3[X], with their standard ring structures.",
+    "global_dimension": "GlobalDimensionLE quantifies over every ModuleCat object in an arbitrary universe containing the ring, not just finite or finitely generated modules. GlobalDimensionEq includes the upper bound and excludes every smaller natural bound.",
+    "four_dimensions": "1 for A, 1 for B, 1 for A[G], and 2 for B[G].",
+    "admissibility": "For every finite-order group element, its additive order is a unit in each coefficient ring. Orders 1 and 2 are both covered.",
+    "source_scope": "Disproves determination by the coefficient-ring global dimension and the group isomorphism type; does not claim to rule out formulas using additional coefficient-ring invariants.",
+    "sources": [
+      "../problem.md",
+      "../hy_result.md"
+    ],
+    "proof_independence": "Spec imports Mathlib only; proof modules do not alter or redefine the specification."
+  },
+  "development_build": "passed, including full expanded theorem and development kernel audit",
+  "independent_kernel_audit": "pending",
+  "target_proved": false
+}
