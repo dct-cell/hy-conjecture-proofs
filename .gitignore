@@ -4,3 +4,8 @@ __pycache__/
 *.olean
 *.ilean
 *.trace
+
+**/.lake/
+**/*.olean
+**/*.ilean
+**/*.trace
