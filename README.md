@@ -5,7 +5,7 @@ HY results for six problems in *Open Problems in Commutative Ring Theory*, with 
 | Problem | Topic | Text review | Lean |
 |---|---|---|---|
 | [5a](problem_05a/) | Group-ring global dimension | Reviewed | Not yet formalized |
-| [32b](problem_32b/) | Two-v-generated Mori domains | Reviewed | Historical verification; fresh rebuild pending |
+| [32b](problem_32b/) | Two-v-generated Mori domains | Reviewed | Full formalization verified (2026-11-09) |
 | [37c](problem_37c/) | Intermediate subalgebras and the locally Jaffard property | Reviewed | Not yet formalized |
 | [41](problem_41/) | Normality of monomial ideals | Reviewed | Not yet formalized |
 | [43](problem_43/) | A relaxation of the Lipman–Sathaye theorem | Reviewed | Not yet formalized |
