@@ -1,12 +1,14 @@
 # Citation review and Lean recheck — 2026-11-09
 
+> Historical record: Problem 37(c) has since been removed from the current collection and its formalization work stopped. See the [withdrawal record](2026-11-09-problem-37c-withdrawal.md).
+
 The six HY results now include references at the points of use and a bibliography with links and theorem, section or page locators. The evaluation statements, counterexamples, main conclusions and quantified scopes are unchanged.
 
 | Problem | Manuscript update |
 |---|---|
 | [5a](../problem_05a/hy_result.md) | Sources for Maschke's theorem, the projective-dimension inequality and Schanuel's lemma. |
 | [32b](../problem_32b/hy_result.md) | Sources for Noetherian formal power-series rings and dimension under integral extensions. |
-| [37c](../problem_37c/hy_result.md) | Precise construction attribution and valuation references; “there is one” is clarified as existence, not uniqueness. |
+| [37c (historical)](https://github.com/dct-cell/hy-conjecture-proofs/blob/00eec591a06b4c05c25efb3868b40edf6b8afa37/problem_37c/hy_result.md) | Precise construction attribution and valuation references; “there is one” is clarified as existence, not uniqueness. |
 | [41](../problem_41/hy_result.md) | References for integral closure and Rees algebras. The manuscript retains its proof of the finite classification criterion. |
 | [43](../problem_43/hy_result.md) | The published theorem and definition numbers, and sources for normality, Cohen–Macaulayness, excellence and openness of Serre loci. |
 | [44](../problem_44/hy_result.md) | Sources for contraction, plumbing, completion, Rees valuations and elliptic curves; expanded explanations of the plumbing neighborhoods and the comparison of analytic and algebraic blowup charts. |
