@@ -5,4 +5,5 @@ lean --version
 lake --version
 lake build
 lake env lean --trust=0 Problem32b/Spec.lean
+lake env lean --trust=0 Problem32b/Proof.lean
 lake env lean --trust=0 Audit.lean
